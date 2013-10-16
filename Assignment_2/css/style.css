@@ -1,0 +1,424 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+/******** start of css *******/
+.clr
+{
+	clear: both;
+}
+#wrapper
+{
+
+}
+
+/********* start of header **********/
+#header
+{
+	height: 120px;
+	
+}
+.headerTop
+{
+	width: 940px;
+	height: 80px;
+	margin: 0px auto;
+	background-color: #fff;
+}
+.headerTopLeft
+{
+	float: left;
+	width: 300px;
+}
+.headerTopRight
+{
+	float: right;
+	padding-top: 10px;
+}
+.headerTopRight ul li
+{
+	float: left;
+	color: #3355aa;
+	margin-left: 10px;
+}
+.headerTopRight ul li a
+{
+	color: #3355aa;
+}
+.headerTopRight ul li.register
+{
+	border-left: 1px solid #3355aa;
+	padding-left: 10px;
+}
+.headerBottom
+{
+	height: 40px;
+	background-color:#3355aa;
+}
+.headerMenu
+{
+	width: 940px;
+	margin: 0px auto;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	font-family:Georgia;
+}
+.headerMenu ul li 
+{
+	float: left;
+	display: block;
+	padding-left: 17px;
+	padding-right: 17px;
+}
+.headerMenu ul li a{
+	font-size: 15px;
+	color: #fff;
+	display: block;
+	font-style: italic;
+}
+/************** end of header ************/
+
+/************ start of content *******/
+
+#content
+{
+	width: 940px;
+	margin: 0px auto;
+	margin-top: 35px;
+}
+.slideImges
+{
+	height: 320px;
+	width: 400px;
+	background-color: #fff;
+	border-radius:5px;
+	box-shadow:0px 0px 5px #cccccc ;
+	float: left;
+	padding:10px;
+}
+.middleMessage 
+{
+	margin-left: 40px;
+	width: 220px;
+	float: left;
+}
+.middleMessage p 
+{
+	text-align: left;
+	font-size: 13px;
+	font-family:Georgia;
+	margin-top: 15px;
+	line-height: 20px;
+	color: #989898;
+	
+}
+.middleMessage h2
+{
+	margin-top: 30px;
+	color:#666666;
+	border-bottom:3px solid #eebe00;
+	padding-bottom: 15px;
+}
+.middleMessage .contentHeading 
+{
+	color: #3355aa;
+}
+
+
+.rightMessage
+{
+	margin-left: 40px;
+	width: 220px;
+	float: left;
+}
+.rightMessage p 
+{
+	text-align: left;
+	font-size: 10px;
+	margin-top: 15px;
+	color: #989898;
+}
+.messageUser
+{
+	color: #000;
+}
+
+.rightMessage h2
+{
+	margin-top: 30px;
+	color:#666666;
+	border-bottom:3px solid #eebe00;
+	padding-bottom: 15px;
+}
+.rightMessage .quotes
+{
+	font-style: italic;
+	color: #656565;
+	font-size: 13px;
+	font-family:Georgia;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.quotesBy
+{
+	padding-bottom: 14px;
+	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 10px;
+}
+.rightMessage h3
+{
+	color: #3355aa;
+}
+
+.middleContent
+{
+	background-color: #fff;
+	margin-top: 75px;
+	text-align: center;
+}
+.middleContent h1
+{
+	padding-bottom: 28px;
+}
+.middleContent ul li
+{
+	width: 167px;
+	float: left;
+	margin-right: 12px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow:0px 0px 5px #cccccc;
+}
+
+.middleContent h1
+{
+	font-size: 28px;
+	font-family:nevis;
+	font-weight: bold;
+}
+
+.middleContent ul li h3
+{
+	font-size: 13px;
+	line-height: 18px;
+	font-family:Georgia;
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+.middleContent ul li a
+{
+	color:#3355aa; 
+}
+.middleContent ul .last a{color:#3355aa;}
+.middleContent .lastHeading
+{
+	padding-bottom:30px;
+}
+.middleContent ul .last
+{
+	margin-right: 0px;
+	background-color: #fff;
+}
+.horizontalBar 
+{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+
+.bottomContentTop
+{
+	text-align: center;
+}
+.bottomContentTop h2
+{
+	font-size: 24px;
+	color: #444444;
+	font-weight: bold;
+	line-height: 36px;
+}
+.bottomContentTop h3
+{
+	color: #666666;
+	font-size: 18px;
+	line-height: 24px;
+}
+.bottomMap
+{
+	text-align: center;
+}
+.arrow
+{
+	height: 25px;
+	text-align: center;
+	font-size: 15px;
+	font-style: italic;
+
+}
+.arrowContainer
+{
+	float: right;
+	width: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-shadow: 0px 0px 5px #cccccc;
+	color: #3355aa;
+}
+.arrowContainer img 
+{
+	margin-right: 5px;
+}
+
+/*********************** footer ************/
+
+#footer
+{
+	height: 104px;
+	background-image: url(../images/footer.png);
+	margin: 0px auto;
+}
+.footerTop
+{
+	margin:0px auto;
+	height: 47px;
+	width: 940px;
+	border-bottom: 1px solid #3d3d3d;
+	
+}
+.footerTopLeft
+{
+	float: left;
+	padding-top: 15px;
+}
+.footerTopLeft li
+{
+	float: left;
+	font-size: 14px;
+	font-family: Georgia;
+	padding-right: 8px;
+	padding-left: 8px;
+	color: #868686;
+	border-left: 1px solid #666666;
+}
+.footerTopLeft li a 
+{
+	color: #868686;
+}
+
+li.active
+{
+	color: #fff;
+	padding-left: 0px;
+	border-left:none;
+}
+
+
+.footerTopRight
+{
+	float: right;
+	padding-top: 15px;
+	
+}
+.footerTopRight li 
+{
+	float: left;
+	font-size: 14px;
+	font-family: Georgia;
+	padding-right: 8px;
+	padding-left: 8px;
+	color: #868686;
+	border-right: 1px solid #666666;
+}
+.footerTopRight li a 
+{
+	color: #868686;
+}
+.footerTopRight .last
+{
+	border:none;
+	padding-right:0px;
+}
+
+.footerBottom
+{
+	margin:0px auto;
+	width: 940px;
+	height: 40px;
+	border-top: 1px solid #222222;
+	padding-top: 15px;
+}
+.footerBottomLeft
+{
+	float: left;
+	width:200px;
+	text-align: left;
+	color: #7e7e7e;
+}
+.footerBottomRight
+{
+	float: right;
+	width: 300px;
+}
+.footerBottomRight ul
+{
+	float: right;
+}
+.footerBottomRight ul li 
+{
+	float: left;
+	padding-right: 10px;
+	color: #7e7e7e;
+}
+.footerBottomRight .last
+{
+	padding-right: 0px;
+}
