@@ -304,6 +304,9 @@ a{
 	font-style: italic;
 
 }
+.arrowContainer a {
+	color: #3355aa;
+}
 .arrowContainer
 {
 	float: right;
