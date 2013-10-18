@@ -68,7 +68,7 @@ a{
 /********* start of header **********/
 #header
 {
-	height: 120px;
+	
 	
 }
 .headerTop
@@ -484,6 +484,42 @@ a{
 	color: #888888;
 	text-shadow: 0px 0px 1px #000000;
 }
+.footerBottomRight li .fb
+{
+ 	background-image: url(../images/fb.png);
+ 	display: block;
+ 	width: 15px;
+ 	height: 15px;
+ 	opacity: 0.5;
+ }
+ .footerBottomRight li .fb:hover
+ {
+ 	opacity: 1;
+ }
+ .footerBottomRight li .twitter
+ {
+ 	background-image: url(../images/twitter.png);
+ 	display: block;
+ 	width: 15px;
+ 	height: 15px;
+ 	opacity: 0.5;
+ }
+ .footerBottomRight li .twitter:hover
+ {
+ 	opacity: 1;
+ }
+ .last .ll 
+ {
+ 	background-image: url(../images/ll.png);
+ 	display: block;
+ 	width: 15px;
+ 	height: 15px;
+ 	opacity: 0.5;
+ }
+ .last .ll:hover
+ {
+ 	opacity: 1;
+ } 
 .footerBottomRight  li img{opacity: 0.4;}
 .footerBottomRight  li img:hover{opacity: 1;}
 .footerBottomRight .last
