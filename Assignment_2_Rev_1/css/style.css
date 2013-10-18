@@ -53,23 +53,18 @@ a{
 	clear: both;
 	border: none;
 	box-shadow: none;
+	visibility: hidden;
+	
 }
 .clr
 {
 	clear: both;
-	
-
-}
-#wrapper
-{
-
 }
 
 /********* start of header **********/
 #header
 {
-	
-	
+	margin-bottom: 35px;
 }
 .headerTop
 {
@@ -82,32 +77,35 @@ a{
 {
 	float: left;
 	display: block;
-	width: 240px;
-	height: 63px;
-	margin-left: 20px;
-	background-image:url("../images/logof.png");
+	width:240px;
+	height:60px;
+	margin-top: 10px;
+	margin-left:20px;
+	background-image:url("../images/logo.png");
+	text-indent: -9999px;
 }
 .headerTopRight
 {
 	float: right;
-	margin-top: 10px;
+	margin-top: 6px;
 }
 .headerTopRight  li
 {
 	float: left;
-	margin-left: 10px;
-	font-size: 15px;
-	font-family: Georgia;
-	line-height: 15px;
+	margin-right:5px;
 }
 .headerTopRight  li a
 {
 	color: #3355aa;
+	font-size: 15px;
+	font-family: Georgia;
+	line-height: 24px;
 }
 .headerTopRight  li.register
 {
 	border-left: 1px solid #3355aa;
 	padding-left: 10px;
+	margin-right: 0px;
 }
 .headerBottom
 {
@@ -118,9 +116,6 @@ a{
 {
 	width: 940px;
 	margin: 0px auto;
-	color: #fff;
-	line-height: 40px;
-	font-family:Georgia;
 }
 .headerMenu .clr
 {
@@ -130,8 +125,6 @@ a{
 .headerMenu  li 
 {
 	float: left;
-	
-
 }
 .headerMenu li:hover
 {
@@ -139,11 +132,14 @@ a{
 }
 .headerMenu  li a{
 	font-size: 15px;
+	line-height: 40px;
 	color: #fff;
+	font-family: Georgia;
 	display: block;
 	font-style: italic;
-	padding-left: 17px;
-	padding-right: 17px;
+	padding-left: 15px;
+	letter-spacing:0.3px;
+	padding-right: 15px;
 }
 /************** end of header ************/
 
@@ -153,7 +149,11 @@ a{
 {
 	width: 940px;
 	margin: 0px auto;
-	margin-top: 35px;
+	
+}
+.topContent
+{
+	margin-bottom: 70px;
 }
 .slideImges
 {
@@ -162,28 +162,30 @@ a{
 	background-color: #fff;
 	border-radius:5px;
 	box-shadow:0px 0px 5px #cccccc ;
+	margin-right: 40px;
 	float: left;
 	padding:10px;
 }
 .middleMessage 
 {
-	margin-left: 40px;
+	margin-right: 40px;
 	width: 220px;
 	float: left;
-	margin-top: 25px;
 }
 .middleMessage p 
 {
-	text-align: left;
+	text-align:left;
 	font-size: 13px;
 	font-family:Georgia;
-	margin-top: 10px;
 	line-height:20px;
+	margin-bottom: 15px;
 	color: #666666;
-
+	word-break: break-all;
 }
 .middleMessage h2
 {
+	margin-top: 18px;
+	margin-bottom: 15px;
 	font-size: 16px;
 	font-weight: bold;
 	font-family: Arial;
@@ -204,13 +206,14 @@ a{
 
 .rightMessage
 {
-	margin-left: 40px;
-	margin-top: 25px;
 	width: 220px;
 	float: left;
 }
 .rightMessage h2
 {
+	margin-top: 18px;
+	margin-bottom: 17px;
+	font-size: 16px;
 	font-weight: bold;
 	line-height: 36px;
 	color:#666666;
@@ -227,16 +230,17 @@ a{
 	line-height: 20px;
 	margin-top: 5px;
 }
+
 .rightMessage .quotes a{
 	color: #000;
 }
 .quotesBy
 {
-	padding-bottom: 10px;
-	margin-top: 5px;
+	padding-bottom: 8px;
+	padding-top: 5px;
 	border-bottom: 1px solid #cccccc;
 	font-style:normal;
-	line-height: 20px;
+	line-height: 13px;
 	font-family:Georgia;
 	font-size: 10px;
 	display: block;
@@ -270,17 +274,19 @@ a{
 .middleContent
 {
 	background-color: #fff;
-	margin-top: 75px;
+	margin-bottom: 10px;
 	text-align: center;
 }
+
 .middleContent h1
 {
-	margin-bottom: 28px;
+	margin-bottom: 22px;
 	color:#444444;
 	font-size: 28px;
 	font-weight: bold;
 	font-family: Arial;
 	line-height: 36px;
+	letter-spacing: 1px;
 }
 .middleContent ul li
 {
@@ -291,6 +297,8 @@ a{
 	border-radius: 5px;
 	padding: 5px;
 	box-shadow:0px 0px 5px #cccccc;
+	-webkit-box-shadow:0px 0px 5px #cccccc;
+	-moz-box-shadow:0px 0px 5px #cccccc;
 }
 
 
@@ -301,8 +309,9 @@ a{
 	line-height: 18px;
 	font-family:Georgia;
 	text-align: center;
-	padding-top: 10px;
-	min-height: 60px;
+	padding-top: 5px;
+	min-height: 50px;
+	color:#3355aa;
 }
 .middleContent ul li img
 {
@@ -311,10 +320,13 @@ a{
 .middleContent ul li img:hover
 {
 	opacity: 1;
+
 }
 .middleContent ul li a
 {
 	color:#3355aa; 
+	display: block;
+
 }
 .middleContent ul .last a{color:#3355aa;}
 
@@ -323,12 +335,15 @@ a{
 	margin-right: 0px;
 	background-color: #fff;
 }
+.middleContent ul .last .lastHeading
+{
+	line-height: 30px;
+}
 .horizontalBar 
 {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
-
 
 .bottomContentTop
 {
@@ -360,10 +375,8 @@ a{
 	line-height: 18px;
 	font-style: italic;
 }
-.arrowContainer a {
-	color: #3355aa;
-}
-.arrowContainer
+
+a.arrowContainer
 {
 	float: right;
 	width: 60px;
@@ -371,6 +384,8 @@ a{
 	padding-bottom: 5px;
 	box-shadow: 0px 0px 5px #cccccc;
 	color: #3355aa;
+	font-size: 13px;
+	font-family: Georgia;
 }
 .arrowContainer img 
 {
@@ -399,8 +414,7 @@ a{
 .footerTopLeft li
 {
 	float: left;
-	font-size: 14px;
-	font-family: Georgia;
+	
 	padding-right: 8px;
 	padding-left: 8px;
 	color: #aaaaaa;
@@ -408,6 +422,9 @@ a{
 }
 .footerTopLeft li a 
 {
+	font-size: 14px;
+	line-height: 16px;
+	font-family: Georgia;
 	color: #aaaaaa;
 	text-shadow: 0px 0px 1px #000000;
 }
@@ -433,8 +450,6 @@ a{
 .footerTopRight li 
 {
 	float: left;
-	font-size: 14px;
-	font-family: Georgia;
 	padding-right: 8px;
 	padding-left: 8px;
 	color: #aaaaaa;
@@ -444,6 +459,9 @@ a{
 {
 	color: #aaaaaa;
 	text-shadow: 0px 0px 1px #000000;
+	font-size: 11px;
+
+	font-family: Georgia;
 }
 .footerTopRight li a:hover
 {
@@ -469,6 +487,9 @@ a{
 	text-align: left;
 	color: #888888;
 	text-shadow: 0px 0px 1px #000000;
+	font-size: 11px;
+	line-height: 28px;
+	font-family: Georgia;
 }
 .footerBottomRight
 {
@@ -478,6 +499,9 @@ a{
 .footerBottomRight 
 {
 	float: right;
+	font-size: 11px;
+	font-family: Georgia;
+	
 }
 .footerBottomRight  li 
 {
@@ -485,6 +509,10 @@ a{
 	padding-right: 10px;
 	color: #888888;
 	text-shadow: 0px 0px 1px #000000;
+	font-size: 11px;
+	line-height: 16px;
+	font-family: Georgia;
+	
 }
 .footerBottomRight li .fb
 {
@@ -492,7 +520,9 @@ a{
  	display: block;
  	width: 15px;
  	height: 15px;
+ 	line-height: 28px;
  	opacity: 0.5;
+ 	
  }
  .footerBottomRight li .fb:hover
  {
@@ -505,6 +535,7 @@ a{
  	width: 15px;
  	height: 15px;
  	opacity: 0.5;
+
  }
  .footerBottomRight li .twitter:hover
  {
