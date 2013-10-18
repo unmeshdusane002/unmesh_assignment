@@ -130,8 +130,7 @@ a{
 .headerMenu  li 
 {
 	float: left;
-	padding-left: 17px;
-	padding-right: 17px;
+	
 
 }
 .headerMenu li:hover
@@ -143,6 +142,8 @@ a{
 	color: #fff;
 	display: block;
 	font-style: italic;
+	padding-left: 17px;
+	padding-right: 17px;
 }
 /************** end of header ************/
 
