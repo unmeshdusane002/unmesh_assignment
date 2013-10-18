@@ -259,6 +259,7 @@ a{
 .rightMessage a.viewMore
 {
 	font-size: 13px;
+	font-family: Georgia;
 	display: block;
 	line-height: 15px;
 	color: #3355aa;
