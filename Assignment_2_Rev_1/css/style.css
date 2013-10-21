@@ -84,7 +84,7 @@ margin-bottom:10px;
 .headerTopRight li
 {
 	float:left;
-	margin-top:8px;
+	margin-top:12px;
 	margin-right:6px;
 	border-right:1px solid #3355aa;
 	padding-right:5px;
@@ -92,7 +92,7 @@ margin-bottom:10px;
 .headerTopRight li a
 {
 	font-size:15px;
-	line-height:24px;
+	line-height:15px;
 	font-family:Georgia;
 	color:#3355aa;
 	
@@ -244,7 +244,7 @@ li.headerTopLast
 	color:#888888;
 	font-family:Georgia;
 }
-.topContentRight .quotesBy .messageUser a
+.topContentRight .quotesBy .messageUser 
 {
 	font-size:10px;
 	line-height:16px;
@@ -381,13 +381,14 @@ li.headerTopLast
 	margin-right: 5px;
 }
 
-/*
 
+/*
 .arrowContainer
 {
 	float: right;
-	display:table-cell;
-	vertical-align:middle;
+	display: inline-block;
+    vertical-align: middle;
+	
 	padding-left:15px;
 	background-image: url('../images/up.png');
 	background-repeat: no-repeat;
@@ -396,7 +397,10 @@ li.headerTopLast
 	font-style:italic;
 	color: #3355aa;
 }
+
 */
+
+
 /*********************** footer ************/
 
 #footer
