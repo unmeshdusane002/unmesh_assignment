@@ -157,7 +157,7 @@ li.headerTopLast
 	width:400px;
 	float:left;
 	height:320px;
-	box-shadow:0px 0px 5px #000;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.2);
 	border-radius:5px;
 	padding:10px;
 	margin-right:40px;
@@ -225,7 +225,7 @@ li.headerTopLast
 	
 	border-bottom:1px solid #f0f0f0;
 	padding-bottom:12px;
-	margin-bottom:12px;
+	margin-bottom:11px;
 	
 }
 .topContentRight ul li a
@@ -282,6 +282,7 @@ li.headerTopLast
 	text-align:center;
 	color:#444444;
 	margin-bottom:26px;
+	word-spacing: 2px;
 	
 }
 .middleContent  ul
