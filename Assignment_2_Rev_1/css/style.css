@@ -356,26 +356,31 @@ li.headerTopLast
 {
 	margin-bottom:15px;
 }
-.arrow
-{
-	text-align: center;
-	font-size: 13px;
-	line-height: 18px;
-	font-style: italic;
-}
-.arrowContainer a {
-	color: #3355aa;
-}
-.arrowContainer
+
+a.arrowContainer
 {
 	float: right;
+	font-style:italic;
+	font-famliy:Georgia;
+	line-height: 11px; 
+	padding: 5px;
+	font-size: 13px;
 	width: 60px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	box-shadow: 0px 0px 5px #cccccc;
 	color: #3355aa;
 	font-style:italic;
+	display: block;
 }
+span.simulatedImage
+	{ 
+    		height: 12px; 
+    		width: 10px; 
+    		background-image:url("../images/up.png");
+   			display: inline-block;
+    		vertical-align: middle;
+    		margin-right: 5px;
+
+	}
 .arrowContainer img 
 {
 	margin-right: 5px;
