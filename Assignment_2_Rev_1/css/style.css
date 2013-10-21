@@ -353,7 +353,7 @@ li.headerTopLast
 }
 .bottomMap
 {
-	margin-bottom:20px;
+	margin-bottom:15px;
 }
 .arrow
 {
@@ -482,13 +482,14 @@ li.headerTopLast
 	width: 940px;
 	height: 40px;
 	border-top: 1px solid #222222;
-	padding-top: 15px;
+	
 }
 .footerBottomLeft
 {
 	float: left;
 	text-align: left;
 	font-size:11px;
+	line-height: 28px;
 	font-family:Georgia;
 	color: #888888;
 	text-shadow: 0px 0px 1px #000000;
@@ -509,8 +510,9 @@ li.headerTopLast
 	color: #888888;
 	text-shadow: 0px 0px 1px #000000;
 	font-size:11px;
-	line-height:18px;
+	line-height:28px;
 	font-family:Georgia;
+
 	
 }
 .footerBottomRight li .fb
@@ -520,8 +522,11 @@ li.headerTopLast
  	width: 15px;
  	height: 15px;
 	line-height:28px;
+	margin-top: 8px;
+	background-repeat: no-repeat;
  	opacity: 0.5;
- }
+ 	
+}
  .footerBottomRight li .fb:hover
  {
  	opacity: 1;
@@ -532,7 +537,11 @@ li.headerTopLast
  	display: block;
  	width: 15px;
  	height: 15px;
+ 	line-height:28px;
+	margin-top: 8px;
+	background-repeat: no-repeat;
  	opacity: 0.5;
+ 	
  }
  .footerBottomRight li .twitter:hover
  {
@@ -544,7 +553,11 @@ li.headerTopLast
  	display: block;
  	width: 15px;
  	height: 15px;
+ 	line-height:28px;
+	margin-top: 8px;
+	background-repeat: no-repeat;
  	opacity: 0.5;
+ 	
  }
  .last .ll:hover
  {
