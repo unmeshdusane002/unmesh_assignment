@@ -1,0 +1,232 @@
+body,h1,h2,h3,h4,ul,li
+{
+	padding: 0px;
+	margin: 0px;
+}
+ul ,li {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+@font-face
+{
+font-family: roboto1;
+src: url("../font/Roboto-Bold.ttf");
+}
+
+
+body
+{
+	background-color: #f3f3f3;
+}
+.clr{
+	clear: both;
+}
+#wrap
+{
+	margin: 0px;
+	padding:0px;
+}
+#header
+{
+	background-color: #fff;
+	box-shadow:0px 0px 5px #000;
+	margin-bottom: 30px;
+}
+.headerContainer
+{
+	margin:0px auto;
+	width: 960px;
+	background: #fff;
+	
+}
+a.headerLogo
+{
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 40px;
+	display: block;
+	text-indent: -9999px;
+	margin-top:10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+.headerRight
+{
+	float: right;
+}
+.headerRight .headerTop
+{
+	margin-bottom: 6px;
+	display: block;
+}
+.headerRight .headerTop 
+{
+	margin-top: 5px;
+	float: right;
+}
+.headerRight .headerTop  li.last
+{
+	border-right: none;
+}
+.headerRight .headerTop li
+{
+	float: left;
+	border-right: 1px solid #aaaaaa;
+	line-height: 16px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.headerRight .headerTop li a 
+{
+	font-size: 12px;
+	font-family: Helvetica;
+	color: #444444;
+}
+.headerRight .headerTop li.clr 
+{
+	clear: both;
+	float: none;
+
+}
+.headerBottom
+{
+	float: right;
+
+}
+.headerBottom  li 
+{
+	float: right;
+}
+.headerBottom  li a 
+{
+	font-size: 13px;
+	line-height: 24px;
+	margin-right: 10px;
+	font-family:roboto1;
+	font-weight: bold;
+	color: #444444;
+}
+.headerBottom  li a img 
+{
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+#content
+{
+	margin: 0px auto;
+	width: 960px;
+	background-color: #fbfbfb;
+	height: 500px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #000;
+	border-radius: 5px;
+}
+.contentLeft
+{
+	width: 680px;
+	float: left;
+	height: 500px;
+	
+}
+.contentRight
+{
+	float: left;
+	width: 280px;
+	height: 500px;
+}
+.contentLeftTop
+{
+	height: 175px;
+	background-color: #444444;
+	border-top-left-radius:5px;
+}
+.contentLeftTopLeft
+{
+	margin-top:15px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 15px;
+}
+
+.userprofile
+{
+	position: relative;
+	margin-bottom: 8px;
+}
+.userprofile img
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border:5px solid #2f2f2f;
+}
+.userprofile .facebook
+{
+	position: absolute;
+	background-image: url("../images/facebook.png");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	top: 80px;
+	left: 90px;
+	border:0px;
+	opacity: 0.8;
+}
+.userprofile .facebook:hover
+{
+	opacity: 1;
+}
+.userprofile .linkedin
+{
+	position: absolute;
+	background-image: url("../images/linkedIn.png");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	top: 95px;
+	left: 70px;
+	border:none;
+	opacity: 0.8;
+}
+.userprofile .linkedin:hover
+{
+	opacity: 1;
+}
+.userprofile .twitter
+{
+	position: absolute;
+	background-image: url("../images/twitter.png");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	top: 60px;
+	left: 100px;
+	border:0px;
+	opacity: 0.8;
+}
+.userprofile .twitter:hover
+{
+	opacity: 1;
+}
+
+
+.contentLeftTopMiddle
+{
+	float: left;
+	
+}
+.contentLeftTopMiddle h2
+{
+	font-size: 24px;
+	line-height: 18px;
+	font-family: Robota1;
+	color: #fff;
+	margin-top: 20px;
+}
