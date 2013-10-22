@@ -15,6 +15,12 @@ a{
 font-family: roboto1;
 src: url("../font/Roboto-Bold.ttf");
 }
+@font-face 
+{
+	font-family: roboto-med;
+	src:url("../font/Roboto-Medium.ttf");
+}
+
 
 
 body
@@ -50,9 +56,7 @@ a.headerLogo
 	height: 40px;
 	display: block;
 	text-indent: -9999px;
-	margin-top:10px;
-	margin-left: 10px;
-	margin-bottom: 10px;
+	margin:10px 0px 10px 10px;
 	float: left;
 }
 .headerRight
@@ -78,8 +82,7 @@ a.headerLogo
 	float: left;
 	border-right: 1px solid #aaaaaa;
 	line-height: 16px;
-	padding-left: 8px;
-	padding-right: 8px;
+	padding: 0px 8px 0px 8px;
 }
 .headerRight .headerTop li a 
 {
@@ -91,22 +94,93 @@ a.headerLogo
 {
 	clear: both;
 	float: none;
-
 }
 .headerBottom
 {
 	float: right;
-
 }
 .headerBottom  li 
 {
 	float: right;
+	margin-right: 25px;
+}
+.headerBottom li a 
+{
+	display:table-cell;
+	vertical-align: middle;
+}
+
+.headerBottom .language
+{
+	background-image: url("../images/10x12-language-assets.png");
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	background-position: 0px 7px;
+}
+.headerBottom .language:hover
+{
+	color: #ff0000;
+	background-image: url("../images/10x12-language-assets-hover.png");
+}
+.headerBottom .teams
+{
+	
+	background-image: url("../images/17x12-teams.png");
+	background-repeat: no-repeat;
+	padding-left: 27px;
+	background-position: 0px 7px;
+}
+.headerBottom .teams:hover
+{
+	color: #ff0000;
+	background-image: url("../images/17x12-teams-hover.png");
+}
+.headerBottom .translator
+{
+	background-image: url("../images/11x12-translator.png");
+	background-repeat: no-repeat;
+	padding-left: 22px;
+	background-position: 0px 7px;
+}
+.headerBottom .translator:hover 
+{
+	color: #ff0000;
+	background-image: url("../images/11x12-translator-hover.png");
+}
+.headerBottom .jobs
+{
+	
+	background-image: url("../images/12x10-jobs.png");
+	background-repeat: no-repeat;
+	padding-left: 22px;
+	background-position: 0px 7px;
+}
+.headerBottom .jobs:hover 
+{
+	color: #ff0000;
+	background-image: url("../images/12x10-jobs-hover.png");
+}
+.headerBottom .dashboard
+{
+	background-image: url("../images/12x10-dashboard.png");
+	background-repeat: no-repeat;
+	padding-left: 22px;
+	background-position: 0px 7px;
+}
+.headerBottom .dashboard:hover 
+{
+	color: #ff0000;
+	background-image: url("../images/12x10-dashboard-hover.png");
+}
+
+.headerBottom .headerBottomLast
+{
+	margin-right: 10px;
 }
 .headerBottom  li a 
 {
 	font-size: 13px;
 	line-height: 24px;
-	margin-right: 10px;
 	font-family:roboto1;
 	font-weight: bold;
 	color: #444444;
@@ -114,7 +188,6 @@ a.headerLogo
 .headerBottom  li a img 
 {
 	margin-right: 10px;
-	margin-left: 20px;
 }
 
 #content
@@ -122,51 +195,49 @@ a.headerLogo
 	margin: 0px auto;
 	width: 960px;
 	background-color: #fbfbfb;
-	height: 500px;
 	border-radius: 5px;
-	box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 5px #d5d5d5;
 	border-radius: 5px;
 }
 .contentLeft
 {
 	width: 680px;
 	float: left;
-	height: 500px;
-	
+
 }
 .contentRight
 {
 	float: left;
 	width: 280px;
-	height: 500px;
+	background-color: #fbfbfb;
+	
 }
 .contentLeftTop
 {
 	height: 175px;
 	background-color: #444444;
 	border-top-left-radius:5px;
+	margin-bottom: 26px;
 }
 .contentLeftTopLeft
 {
-	margin-top:15px;
 	float: left;
-	margin-left: 20px;
-	margin-right: 15px;
+	margin:15px 19px 0px 20px;
 }
 
-.userprofile
+.profileImage
 {
 	position: relative;
 	margin-bottom: 8px;
 }
-.userprofile img
+.profileImage img
 {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 	border:5px solid #2f2f2f;
 }
-.userprofile .facebook
+.profileImage .facebook
 {
 	position: absolute;
 	background-image: url("../images/facebook.png");
@@ -179,11 +250,11 @@ a.headerLogo
 	border:0px;
 	opacity: 0.8;
 }
-.userprofile .facebook:hover
+.profileImage .facebook:hover
 {
 	opacity: 1;
 }
-.userprofile .linkedin
+.profileImage .linkedin
 {
 	position: absolute;
 	background-image: url("../images/linkedIn.png");
@@ -195,11 +266,11 @@ a.headerLogo
 	border:none;
 	opacity: 0.8;
 }
-.userprofile .linkedin:hover
+.profileImage .linkedin:hover
 {
 	opacity: 1;
 }
-.userprofile .twitter
+.profileImage .twitter
 {
 	position: absolute;
 	background-image: url("../images/twitter.png");
@@ -211,22 +282,341 @@ a.headerLogo
 	border:0px;
 	opacity: 0.8;
 }
-.userprofile .twitter:hover
+.profileImage .twitter:hover
 {
 	opacity: 1;
 }
-
-
 .contentLeftTopMiddle
 {
 	float: left;
-	
 }
-.contentLeftTopMiddle h2
+.contentLeftTopMiddle h1
 {
 	font-size: 24px;
 	line-height: 18px;
-	font-family: Robota1;
+	font-family: roboto1;
 	color: #fff;
+	margin:20px 0px 11px 0px;
+}
+.contentLeftTopMiddle .userFrom
+{
+	font-size: 12px;
+	line-height: 20px;
+	font-family: Helvetica;
+	font-weight: lighter;
+	color: #bbbbbb;
+	display: block;
+	margin-bottom: 5px;
+}
+.contentLeftTopMiddle .userProfession
+{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Helvetica;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+	margin-bottom: 9px;
+}
+.contentLeftTopMiddle ul
+{
+	font-family: Helvetica;
+	font-size: 12px;
+	line-height: 18px;
+	color: #bbbbbb;
+}
+.contentLeftTopMiddle ul span 
+{
+	color: #fff;
+}
+
+.contentLeftTopRight
+{
+	float: right;
+	font-family: Helvetica;
+	margin:15px 20px 0px 0px;
+}
+
+.contentLeftTopRight img 
+{
+	float: right;
+	display: block;
+	margin:0px 5px 7px 0px;
+}
+.recommendation
+{
+	font-size: 13px;
+	font-family: Helvetica;
+	line-height: 16px;
+	color: #bbbbbb;
+	margin-bottom: 30px;
+}
+.recommendation span 
+{
+	color: #fff;
+	font-size: 18px;
+	line-height: 16px;
+}
+.contentLeftTopRight .upgradeBtn
+{
+	display: block;
+	width: 164px;
+	border: 1px solid #000;
+	height: 29px;
+	text-align: center;
+	border-radius:5px;
+	box-shadow: inset 0px 0px 2px #fff;
+	float: right;
+	box-shadow: 0px 0px 3px #000;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#525252), to(#222222));
+	background-image: -moz-linear-gradient(top, #525252, #222222);
+	font-size: 14px;
+	line-height: 24px;
+	font-family: Helvetica;
+	color: #fff;
+	margin-bottom: 14px;
+}
+.addpower
+{
+	font-size: 12px;
+	text-align: right;
+	color: #bbbbbb;
+}
+.addpower span 
+{
+	color: #fff;
+}
+
+.profileInfo
+{
+	margin:0px 35px 10px 35px;
+	font-family: Helvetica;
+}
+.profileInfo ul li 
+{
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 20px;
+}
+.profileInfo .contactInfo
+{
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 10px;
+	margin-bottom: 35px;
+}
+.profileInfo .contactInfo .address
+{
+	background-image: url("../images/15x10-400.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	background-position: 3px;
+}
+.profileInfo .contactInfo .contact
+{
+	margin-bottom: 16px;
+}
+.profileInfo .contactInfo li .mobile
+{
+	background-image: url("../images/15x17-call.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	width: 280px;
+	float: left;
+	background-position: 3px;
+	
+}
+.profileInfo .contactInfo li .fax
+{
+	background-image: url("../images/15X15-fax.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	float: left;
+}
+.profileInfo .contactInfo li .email
+{
+	background-image: url("../images/15X10-message.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	width: 280px;
+	float: left;
+	background-position: 3px;
+}
+.profileInfo .contactInfo li .web
+{
+	background-image: url("../images/18X20-link.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	float: left;
+	color: #dd4422;
+}
+
+/* ************* job history ************* */
+.jobHistory
+{
+	margin-bottom: 35px;
+}
+.jobHistory .heading
+{
+	font-size: 24px;
+	display: block;
+	line-height: 31px;
+	font-family: roboto-med;
+	background-image: url("../images/31X26-jobs.png");
+	background-repeat: no-repeat;
+	padding-left: 37px;
+	background-position: middle;
+	color: #444444;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 10px;
+	margin-bottom: 12px;
+}
+.jobHistory ul
+{
+	font-family: Helvetica;
+}
+.jobHistory ul li 
+{
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 15px;
+}
+.jobHistory h3
+{
+	font-size: 18px;
+	line-height: 36px;
+	color: #444444;
+	
+}
+.jobHistory .companyName
+{
+	font-size: 14px;
+	line-height: 22px;
+	display: block;
+	color: #444444;
+}
+.jobHistory .duration
+{
+	font-size: 11px;
+	line-height: 16px;
+	color: #aaaaaa;
+	display: block;
+	margin-bottom: 14px;
+}
+.jobHistory p 
+{
+	font-size: 12px;
+	line-height: 18px;
+	color: #888888;
+	text-align: justify;
+}
+/********** education section *************/
+.education 
+{
+	margin:0px 0px 10px 0px;
+}
+.education .heading
+{
+	font-size: 24px;
+	display: block;
+	line-height: 36px;
+	font-family: roboto-med;
+	background-image: url("../images/40X33-education.png");
+	background-repeat: no-repeat;
+	padding-left: 45px;
+	color: #444444;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.education ul 
+{
+	
+}
+.education ul li 
+{
+	float: left;
+	display: block;
+	width: 265px;
+	box-shadow:0px 0px 1px 1px #d9d9d9;
+	border-radius:3px;
+	padding:15px 14px 15px 14px;
+}
+.education ul .clr 
+{
+	clear: both;float: none;box-shadow: none;border: none;
+	padding: 0px;
+	margin: 0px;
+}
+.education ul li.educationLast
+{
+	margin-right: 0px;
+	float: right;
+}
+.education ul li h3 
+{
+	font-size: 18px;
+	line-height: 22px;
+	color: #444444;
+}
+.education ul .course
+{
+	font-size: 14px;
+	line-height: 22px;
+	color: #444444;
+	display: block;
+}
+.education ul .duration
+{
+	font-size: 11px;
+	line-height: 16px;
+	color: #aaaaaa;
+}
+
+/**************** Review section *******************/
+.review {
+	font-family: Helvetica;
+}
+.review .reviewTop
+{
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 10px;
+}
+.review .head
+{
+	font-size: 24px;
+	line-height: 36px;
+	font-family: roboto-med;
+	color: #444444;
+	float: left;
+	display: block;
+}
+
+.review .reviewnav
+{
+	float: right;
 	margin-top: 20px;
+}
+.review .reviewnav li 
+{
+	float: left;
+	margin-right: 10px;
+}
+.review .reviewnav .prev
+{
+	background-image: url("../images/prev.png");
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 16px;
+	display: block;
+	float: left;
+	padding-right: 10px;
+
+}
+.review .reviewnav .next
+{
+	background-image: url("../images/next.png");
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 16px;
+	display: block;
+	float: left;
 }
