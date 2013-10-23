@@ -10,6 +10,7 @@ a{
 	text-decoration: none;
 }
 
+/*********** to use external fonts ******/
 @font-face
 {
 font-family: roboto1;
@@ -19,6 +20,11 @@ src: url("../font/Roboto-Bold.ttf");
 {
 	font-family: roboto-med;
 	src:url("../font/Roboto-Medium.ttf");
+}
+@font-face 
+{
+	font-family: roboto-regular;
+	src:url("../font/Roboto-Regular.ttf");
 }
 
 
@@ -30,13 +36,12 @@ body
 .clr{
 	clear: both;
 }
-#wrap
-{
+
+#wrap{
 	margin: 0px;
 	padding:0px;
 }
-#header
-{
+#header{
 	background-color: #fff;
 	box-shadow:0px 0px 5px #000;
 	margin-bottom: 30px;
@@ -65,14 +70,11 @@ a.headerLogo
 }
 .headerRight .headerTop
 {
-	margin-bottom: 6px;
-	display: block;
-}
-.headerRight .headerTop 
-{
 	margin-top: 5px;
+	margin-bottom: 6px;
 	float: right;
 }
+
 .headerRight .headerTop  li.last
 {
 	border-right: none;
@@ -195,34 +197,35 @@ a.headerLogo
 	margin: 0px auto;
 	width: 960px;
 	background-color: #fbfbfb;
+	
+	/*box-shadow: 0px 0px 5px #d5d5d5;*/
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
 	border-radius: 5px;
-	box-shadow: 0px 0px 5px #d5d5d5;
-	border-radius: 5px;
+	margin-bottom: 50px;
+
 }
 .contentLeft
 {
 	width: 680px;
 	float: left;
+	background-color: #fff;
+	box-shadow: 5px 0 5px -5px rgba(0,0,0,0.3);;
+/*box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);*/
+}
 
-}
-.contentRight
-{
-	float: left;
-	width: 280px;
-	background-color: #fbfbfb;
-	
-}
 .contentLeftTop
 {
-	height: 175px;
+	
+	padding: 18px 20px 5px 20px;
 	background-color: #444444;
 	border-top-left-radius:5px;
 	margin-bottom: 26px;
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
 }
 .contentLeftTopLeft
 {
 	float: left;
-	margin:15px 19px 0px 20px;
+	margin:0px 19px 0px 0px;
 }
 
 .profileImage
@@ -296,7 +299,7 @@ a.headerLogo
 	line-height: 18px;
 	font-family: roboto1;
 	color: #fff;
-	margin:20px 0px 11px 0px;
+	margin:0px 0px 11px 0px;
 }
 .contentLeftTopMiddle .userFrom
 {
@@ -334,9 +337,36 @@ a.headerLogo
 {
 	float: right;
 	font-family: Helvetica;
-	margin:15px 20px 0px 0px;
+	margin:0px 0px 0px 0px;
 }
+/**** css for star rating **********/
+.contentLeftTopRight .userRating
+{
+	width: 80px;
+	margin:0px 5px 7px 0px;
+	float: right;
+	height: 13px;
+	position: relative;
+	background: url("../images/ratingFront.png") top left repeat-x;
+	background-color: #444444;
+}
+.contentLeftTopRight .userRating li 
+{
+	float: left;
+}
+.contentLeftTopRight .userRating li  a 
+{
+	display: block;
+	width: 16px;
+	height: 13px;
+	position: absolute;
+}
+.contentLeftTopRight .userRating li  a:hover 
+{
 
+} 
+
+/***********************************/
 .contentLeftTopRight img 
 {
 	float: right;
@@ -361,17 +391,15 @@ a.headerLogo
 {
 	display: block;
 	width: 164px;
-	border: 1px solid #000;
-	height: 29px;
+	border: 1px solid #0e0e0e;
 	text-align: center;
 	border-radius:5px;
-	box-shadow: inset 0px 0px 2px #fff;
+	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.3);
 	float: right;
-	box-shadow: 0px 0px 3px #000;
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#525252), to(#222222));
 	background-image: -moz-linear-gradient(top, #525252, #222222);
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 29px;
 	font-family: Helvetica;
 	color: #fff;
 	margin-bottom: 14px;
@@ -392,6 +420,17 @@ a.headerLogo
 	margin:0px 35px 10px 35px;
 	font-family: Helvetica;
 }
+.profileInfo ul 
+{
+
+}
+.profileInfo ul li.clr 
+{
+	clear: both;
+	float: none;
+	margin: 0px;
+	padding: 0px;
+} 
 .profileInfo ul li 
 {
 	font-size: 14px;
@@ -431,6 +470,10 @@ a.headerLogo
 	background-repeat: no-repeat;
 	padding-left: 25px;
 	float: left;
+}
+.profileInfo .contactInfo .email 
+{
+	margin-bottom: 20px;
 }
 .profileInfo .contactInfo li .email
 {
@@ -477,7 +520,7 @@ a.headerLogo
 .jobHistory ul li 
 {
 	border-bottom: 1px solid #ebebeb;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 .jobHistory h3
 {
@@ -511,7 +554,7 @@ a.headerLogo
 /********** education section *************/
 .education 
 {
-	margin:0px 0px 10px 0px;
+	margin:0px 0px 8px 0px;
 }
 .education .heading
 {
@@ -574,11 +617,13 @@ a.headerLogo
 /**************** Review section *******************/
 .review {
 	font-family: Helvetica;
+	margin-bottom: 10px;
 }
 .review .reviewTop
 {
 	border-bottom: 1px solid #ebebeb;
 	padding-bottom: 10px;
+	margin-bottom: 20px;
 }
 .review .head
 {
@@ -589,12 +634,20 @@ a.headerLogo
 	float: left;
 	display: block;
 }
-
 .review .reviewnav
 {
 	float: right;
 	margin-top: 20px;
 }
+.review .reviewBottom .clr 
+{
+	clear: both;float: none;
+	padding: 0px;
+	margin: 0px;
+	box-shadow: none;
+	height: 0px;
+	width: 0px;
+} 
 .review .reviewnav li 
 {
 	float: left;
@@ -619,4 +672,264 @@ a.headerLogo
 	height: 16px;
 	display: block;
 	float: left;
+}
+.review  .reviewBottom li 
+{
+	width: 278px;
+	float: left;
+	border-radius: 5px;
+	height: 130px;
+	margin-right: 20px;
+	box-shadow: 0px 0px 0px 1px #d9d9d9;
+	padding:10px 5px 10px 10px;
+	
+}
+.review  .reviewBottom li.reviewLast
+{
+	margin-right: 0px;
+	float: right;
+}
+.reviewProfileTop
+{
+	border-bottom: 1px solid #f2f2f2;	
+	margin-bottom: 5px;
+}
+.reviewProfileTop a 
+{
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.reviewProfileTop img 
+{
+	border-radius: 30px;
+	width: 60px;
+	height: 60px;
+	margin-bottom: 5px;
+}
+.reviewProfileTop .reviewProfileName
+{
+	float: left;
+	padding-top:10px;
+}
+.reviewProfileName a 
+{
+	
+	font-size: 16px;
+	line-height: 18px;
+	color: #222222;
+	display: block;
+}
+.reviewProfileName span 
+{
+	font-size: 12px;
+	line-height: 18px;
+	color: #666666;
+	display: block;
+}
+
+.review .reviewProfileBottom span 
+{
+	font-size: 14px;
+	line-height: 18px;
+	color: #444444;
+}
+.review .reviewProfileBottom p 
+{
+	font-size: 12px;
+	line-height: 16px;
+	color: #888888;
+	margin: 0px;
+}
+.review .reviewProfileBottom p a 
+{
+	color: #dd4422;
+}
+
+/************** footer ****************/
+#footer
+{
+	background-color: #353535;
+	font-family: Helvetica;
+}
+#footer .footerWrapper
+{
+	width: 960px;
+	margin: 0px auto;
+	text-align: center;
+	padding-bottom: 80px;
+}
+#footer .footerWrapper ul 
+{	
+	padding-top: 15px;
+	text-align: center;
+}
+
+#footer .footerWrapper ul li 
+{
+	
+	float: none;
+	display: inline;
+	padding:0px 5px 0px 5px;
+	border-right: 1px solid #d9d9d9;
+	margin: 0px;
+}
+#footer .footerWrapper .footerLast 
+{
+	border: none;
+}
+#footer .footerWrapper ul .clr 
+{
+	float: none;
+	border: none;
+	clear: both;
+}
+#footer .footerWrapper ul li a 
+{
+	font-size: 12px;
+	line-height: 12px;
+	font-family: Helvetica;
+	color: #d9d9d9;
+}
+#footer .footerWrapper ul li.clr 
+{
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	float: none;
+}
+#footer .footerWrapper span 
+{
+	color: #888888;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+
+/*********** end of footer *************/
+
+
+
+/************************* rightcontent ********************/
+.contentRight
+{
+	float: left;
+	width: 280px;
+	border-top-right-radius:5px;
+
+	
+}
+.contentRight .contentRightTop
+{
+	margin:25px 30px 20px 20px;
+	font-family: roboto1;
+	vertical-align: middle;
+}
+.contentRight .contentRightTop .messages
+{
+	background-image: url("../images/msg.png");
+	background-repeat: no-repeat;
+	font-size: 18px;
+	line-height: 36px;
+	float: left;
+	color: #dd4422;
+	padding-left: 40px;
+}
+.contentRight .contentRightTop .msgCount
+{
+	float: right;
+	font-family: roboto-regular;
+}
+.contentRight .contentRightTop .msgCount .msgNew
+{
+	float: right;
+	font-size: 12px;
+	line-height: 12px;
+	color: #666666;
+	margin-top:12px;
+	margin-right: 6px;
+}
+.contentRight .contentRightTop .msgCount .msgNo
+{
+	height: 18px;
+	width: 22px;
+	color: #fff;
+	font-size: 12px;
+	float: right;
+	padding-top: 3px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #dd4422;
+	margin-top: 8px;
+}
+
+
+.dayMessage
+{
+	font-family: Helvetica;
+	margin-bottom:20px;
+}
+.dayMessage ul 
+{
+	margin:0px 30px 10px 20px;
+}
+.dayMessage ul li
+{
+	display: block;
+	border-bottom: 1px solid #ebebeb;
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+}
+.dayMessage ul li a 
+{
+	display:block;
+	float: left;
+	
+}
+.dayMessage ul li a  span 
+{
+	margin-top: 8px;
+	display: block;
+	float: left;
+	font-size: 16px;
+	line-height: 18px;
+	color: #222222;
+}
+.dayMessage ul li img 
+{
+	width: 35px;
+	height: 35px;
+	float: left;
+	display: block;
+	border-radius: 17px;
+	margin-right: 10px;
+}
+.dayMessage ul li p 
+{
+	font-size: 12px;
+	line-height: 16px;
+	color: #666666;
+	margin: 0px;
+	padding:0px;
+}
+.dayMessage ul li span 
+{
+	font-size: 11px;
+	color: #aaaaaa;
+	margin:5px 0px 10px 0px;
+	display: block;
+}
+
+.date span
+{
+	margin-left: 20px;
+	border-radius: 3px;
+	color: #666666;
+	float: left;
+	display: block;
+	font-size: 11px;
+	line-height: 18px;
+	padding:0px 5px 0px 5px;
+	background-color:#e5e5e5;
 }

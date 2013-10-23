@@ -6,8 +6,8 @@
 		<link href="css/style.css" type="text/css" rel="stylesheet"/>
 	</head>
 	<body>
-	<div id="wrap">
-		<div id="header">
+	<div id="wrap"><!-- start of wrapper -->
+		<div id="header"> <!-- start of header -->
 			<div class="headerContainer">
 				<a href="index.html" class="headerLogo" title="Langmart">Langmart</a>
 				
@@ -16,6 +16,7 @@
 						<li><a href="#">Messages</a></li>
 						<li class="help"><a href="#">Help</a></li>
 						<li class="last"><a href="#">Logout</a></li>
+						<li class="clr"></li>
 					</ul>
 					<div class="clr"></div>
 					<ul class="headerBottom">
@@ -28,18 +29,19 @@
 				</div>
 				<div class="clr"></div>
 			</div>
-		</div>
+		</div> <!-- end of header -->
 
-		<div id="content">
+		<div id="content"><!-- start of content -->
 			<div class="contentLeft">
 				<div class="contentLeftTop"> <!-- most top element in left content -->
+
 					<div class="contentLeftTopLeft">
-						<div class="profileImage">
+						<div class="profileImage"><!-- use profile image div -->
 							<img src="images/man.png" alt="user picture"/>
 							<a href="#"><span class="linkedin"></span></a>
 							<a href="#"><span class="facebook"></span></a>
 							<a href="#"><span class="twitter"></span></a>
-						</div>
+						</div><!-- end of user profile image div -->
 						<img src="images/120X25-user.png" alt="rank"/>
 					</div>
 
@@ -53,24 +55,32 @@
 							<li>Year Of Experience: <span>7 Years</span></li>
 						</ul>	
 					</div>
+
 					<div class="contentLeftTopRight">
-						<img src="images/stars.png" alt="rating" />
+						<ul class="userRating">
+							<li><a href="#" class="one"></a></li>
+							<li><a href="#" class="two"></a></li>
+							<li><a href="#" class="three"></a></li>
+							<li><a href="#" class="four"></a></li>
+							<li><a href="#" class="five"></a></li>
+						</ul>
+						<!-- <img src="images/stars.png" alt="rating" />-->
 						<div class="clr"></div>
-						<div class="recommendation">
-							Recommented By:<span>45</span> People
-						</div>
+						<div class="recommendation">Recommented By: <span>45</span> People</div>
 						<a href="#" class="upgradeBtn">Upgrade to Platinum!</a>
 						<div class="addpower">Add power feature for just<br /><span>$1129</span> per <span>month</span></div>
+						<div class="clr"></div>
 					</div>
-
+					<div class="clr"></div>
 				</div><!-- end of most top element -->
 				
-				<div class="profileInfo">
+				<div class="profileInfo"> <!-- middle information -->
+
 					<div class="contactInfo">
 						<ul>
 							<li class="address">400 S Hill St, Los Angeles, Albany 90013, Newyork</li>
 							<li class="contact"><span class="mobile">+91 400 528 2569</span>   <span class="fax">+91 400 528 2569</span><div class="clr"></div></li>
-							<li><span class="email">Anthoney.watson@yopmail.com</span><a href="#"><span class="web">http://langmart.com</span></a></li>
+							<li class="email"><span class="email">Anthoney.watson@yopmail.com</span><a href="#"><span class="web">http://langmart.com</span></a></li>
 							<li class="clr"></li>
 						</ul>
 					</div>
@@ -118,17 +128,155 @@
 							</div>
 							<div class="clr"></div>
 						</div>
+						<ul class="reviewBottom">
+							<li>
+								<div class="reviewProfileTop">
+									<a href="#"><img src="images/review.png" alt=""/></a> 
+									<div class="reviewProfileName">
+										<a href="#">Adam Dan</a>
+										<div class="clr"></div>
+										<span>Ceo | Century Fox</span>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="reviewProfileBottom">
+									<span>Adam rates Monika At</span>
+									<p>Monika has been dynamic student and always ready to take is new innovative steps... <a href="#">More</a></p>
+								</div>
+							</li>
+							<li class="reviewLast">
+								<div class="reviewProfileTop">
+									<a href="#"><img src="images/review.png" alt=""/></a> 
+									<div class="reviewProfileName">
+										<a href="#">Adam Dan</a>
+										<div class="clr"></div>
+										<span>Ceo | Century Fox</span>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="reviewProfileBottom">
+									<span>Adam rates Monika At</span>
+									<p>Monika has been dynamic student and always ready to take is new innovative steps... <a href="#">More</a></p>
+								</div>
+							</li>
+							<li>
+								<div class="reviewProfileTop">
+									<a href="#"><img src="images/review.png" alt=""/></a> 
+									<div class="reviewProfileName">
+										<a href="#">Adam Dan</a>
+										<div class="clr"></div>
+										<span>Ceo | Century Fox</span>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="reviewProfileBottom">
+									<span>Adam rates Monika At</span>
+									<p>Monika has been dynamic student and always ready to take is new innovative steps... <a href="#">More</a></p>
+								</div>
+							</li>
+							<li class="reviewLast">
+								<div class="reviewProfileTop">
+									<a href="#"><img src="images/review.png" alt=""/></a> 
+									<div class="reviewProfileName">
+										<a href="#">Adam Dan</a>
+										<div class="clr"></div>
+										<span>Ceo | Century Fox</span>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="reviewProfileBottom">
+									<span>Adam rates Monika At</span>
+									<p>Monika has been dynamic student and always ready to take is new innovative steps... <a href="#">More</a></p>
+								</div>
+							</li>	
+							<li class="clr"></li>
+						</ul>
 					</div>
 				</div>
 			</div>
+
+
 			<div class="contentRight">
-			
+				<div class="contentRightTop">
+					<span class="messages">MESSAGES</span>
+					<div class="msgCount">
+						<span class="msgNo">2</span>
+						<span class="msgNew">NEW!</span>
+					</div>
+					<div class="clr"></div>
+				</div>
+
+				<div class="dayMessage">
+					<div class="dayMessageTop">
+						<div class="date">
+							<span>TODAY</span>
+						</div>
+						<div class="clr"></div>
+						<img src="images/seperator.png" alt=""/>
+					</div>	
+					<ul>
+						<li>
+							<a href="#"><img src="images/comment.png" alt=""/><span>John Galt </span></a>
+							<div class="clr"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+							<span>2 mins ago</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/jenny.png" alt="" /><span>Jenny Smith</span></a>
+							<div class="clr"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+							<span>2 hr ago</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="dayMessage">	
+					<div class="dayMessageTop">
+						<div class="date">
+							<span>15 Dec 2012</span>
+						</div>
+						<div class="clr"></div>
+						<img src="images/seperator.png" alt=""/>
+					</div>	
+					<ul>
+						<li>
+							<a href="#"><img src="images/mike.png" alt=""/><span>Mike Waston</span></a>
+							<div class="clr"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+							<span>2 days ago</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/comment.png" alt=""/><span>John Galt</span></a>
+							<div class="clr"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+							<span>2 days ago</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/natasha1.png" alt=""/><span>Natasha Roy</span></a>
+							<div class="clr"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+							<span>2 days ago</span>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="clr"></div>
 		</div>
-		<div id="footer">
-		
 
+
+		<div id="footer">
+			<div class="footerWrapper">
+				<ul>
+					<li><a href="#">Terms of use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">About Langmart</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li class="footerLast"><a href="#" >FAQ's</a></li>
+					<li class="clr"></li>
+				</ul>
+				<span>&copy; Langmart 2012</span>
+				<div class="clr"></div>
+			</div>
 		</div>
 	</div>
 
