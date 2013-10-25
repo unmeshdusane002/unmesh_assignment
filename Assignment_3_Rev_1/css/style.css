@@ -216,6 +216,7 @@ a.headerLogo
 	border-radius: 50%;
 	border:5px solid #2f2f2f;
 }
+
 .profileImage .facebook
 {
 	position: absolute;
@@ -231,7 +232,9 @@ a.headerLogo
 .profileImage .facebook:hover
 {
 	opacity: 1;
+	tranision:all 1s ease;
 }
+
 .profileImage .linkedin
 {
 	position: absolute;
@@ -441,14 +444,6 @@ a.headerLogo
 	margin-bottom: 35px;
 	font-family: Helvetica;
 }
-
-.profileInfo .contactInfo .address
-{
-	
-	
-	
-}
-
 .profileInfo .contactInfo .address i 
 {
 	background: url("../images/address.png") no-repeat;
@@ -836,12 +831,18 @@ a.headerLogo
 }
 .contentRight .contentRightTop .messages
 {
-	background: url("../images/msg.png") no-repeat;
 	font-size: 18px;
 	line-height: 36px;
 	float: left;
 	color: #dd4422;
-	padding-left: 40px;
+}
+.contentRight .contentRightTop .messages i 
+{
+	background: url("../images/msg.png") no-repeat;
+	width: 35px;
+	height: 35px;
+	float: left;
+	margin-right: 10px;
 }
 .contentRight .contentRightTop .msgCount
 {
