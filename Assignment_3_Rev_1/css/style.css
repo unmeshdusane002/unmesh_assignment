@@ -27,7 +27,7 @@ src: url("../font/Roboto-Bold.ttf");
 	font-family: roboto-regular;
 	src:url("../font/Roboto-Regular.ttf");
 }
-
+/****************************************/
 
 
 body
@@ -264,14 +264,27 @@ a.headerLogo
 }
 .contentLeft .contentLeftTopLeft .button 
 {
+	
+	background: url("../images/bar.png") repeat-x;
+	text-align: center;
+	display: block;
+	margin: 0px auto;
+}
+.contentLeft .contentLeftTopLeft .button span 
+{
+	padding: 0px 5px 0px 5px;
+	color: #000000;
 	font-size: 12px;
 	font-family: Helvetica;
 	line-height: 20px;
-	background: url("../images/member-type.png") no-repeat;
-	width: 115px;
-	text-align: center;
+}
+.contentLeft .contentLeftTopLeft .button  i 
+{
+	float: right;
+	background: url("../images/cross.png") no-repeat;
 	display: block;
-	color: #000000;
+	height: 20px;
+	width:12px;
 }
 .contentLeft .contentLeftTopLeft .button:hover 
 {
@@ -448,7 +461,7 @@ a.headerLogo
 }
 .profileInfo .contactInfo li .mobile
 {
-	width: 280px;
+	width: 300px;
 	float: left;
 	margin-right: 5px;
 }
@@ -474,7 +487,7 @@ a.headerLogo
 .profileInfo .contactInfo li .email
 {
 	
-	width: 280px;
+	width: 305px;
 	float: left;
 	background-position: 3px;
 }
