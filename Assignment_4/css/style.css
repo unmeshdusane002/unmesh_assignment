@@ -25,8 +25,6 @@ body
 	padding:0px;
 	margin:0px;
 }
-
-
 #header
 {
 	background:#dae6ff;
@@ -39,13 +37,12 @@ body
 {
 	width:990px;
 	margin:0px auto;
-	
 }
 .headerLogo
 {
 	margin:20px 95px 20px 0px;
 	float:left;
-	background-image:url("../images/logo.png");
+	background:url("../images/logo.png") no-repeat;
 	height:35px;
 	width:135px;
 	text-indent: -9999px;
@@ -95,7 +92,6 @@ body
 }
 .formContainer input[type="button"]
 {
-	
 	padding:0px 20px 0px 20px;
 	height:28px;
 	background-color:#3664b2;
@@ -105,7 +101,6 @@ body
 	font-size:14px;
 	color:#ffffff;
 	font-weight:bold;
-
 }
 .headerRight 
 {
@@ -189,7 +184,6 @@ body
 	float:left;
 	width:210px;
 	margin-right:19px;
-	
 }
 .schoolLogo
 {
@@ -254,9 +248,6 @@ body
 {
 	color:#959595;
 }
-
-
-
 
 /***************** css for navigation ******************/
 .leftNavigation 
@@ -427,8 +418,6 @@ h2.subheading
 	border:1px solid #e5e5ee;
 	float: left;
 }
-
-
 
 /***************** css for rightContent ***************/
 .rightContent 
