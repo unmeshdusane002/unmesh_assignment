@@ -48,6 +48,7 @@ body
 	background-image:url("../images/logo.png");
 	height:35px;
 	width:135px;
+	text-indent: -9999px;
 }
 .headerMiddle
 {
@@ -455,6 +456,46 @@ h2.subheading
 {
 	width:990px;
 	margin:0px auto;
-	height:200px;
 	
+}
+.footerContainer ul 
+{
+	margin-top: 16px;
+	padding-bottom: 50px;
+}
+.footerContainer .footerLeft 
+{
+	float:left;
+}
+.footerContainer .footerRight 
+{
+	float: right;
+}
+.footerContainer  ul li 
+{
+	float: left;
+	margin-right: 15px;
+	
+}
+.footerContainer  ul li  a 
+{
+	font-size: 14px;
+	line-height: 22px;
+	color: #2255aa;
+}
+.footerContainer .footerRight  li 
+{
+	margin-right: 10px;
+}
+.footerContainer .footerRight   li a 
+{
+	font-size: 12px;
+	line-height: 22px;
+}
+.footerContainer  ul li.copy 
+{
+	font-size: 12px;
+	line-height: 22px;
+	color: #959595;
+	margin-right: 0px;
 }
