@@ -77,6 +77,10 @@ body
 	font-size:14px;
 	line-height:22px;
 }
+.headerMiddle ul li a:hover 
+{
+	color: #000;
+}
 .headerMiddle .searchForm 
 {
 	float:left;
@@ -124,6 +128,10 @@ body
 	line-height:22px;
 	color:#2255aa;
 }
+.headerRight  ul li a:hover 
+{
+	color: #000;
+}
 .headerRight ul li.login 
 {
 	margin-right:0px;
@@ -148,15 +156,24 @@ body
 	width:22px;
 	height:22px;
 	display:block;
+	opacity: 0.6;
 } 
+.headerRight ul li a.twitter:hover 
+{
+	opacity: 1;
+}
 .headerRight ul li a.fb
 {
 	background:url("../images/f.png") no-repeat;
 	width:22px;
 	height:22px;
 	display:block;
+	opacity: 0.6;
 }
-
+.headerRight ul li a.fb:hover 
+{
+	opacity: 1;
+}
 
 /******************** content *******************/
 
@@ -165,13 +182,14 @@ body
 	width:990px;
 	margin:0px auto;
 	margin-bottom:20px;
+	background: url("../images/back-bar.png") repeat-y;
 }
 .leftContent 
 {
 	float:left;
 	width:210px;
 	margin-right:19px;
-	border-right:1px solid #e7e7ef;
+	
 }
 .schoolLogo
 {
@@ -191,7 +209,10 @@ body
 	margin-bottom:17px;
 	display:block;
 }
-
+.schoolName:hover 
+{
+	color: #000;
+}
 .socialButton 
 {
 	margin-bottom:15px;
@@ -220,6 +241,10 @@ body
 {
 	color:#2255aa;
 }
+.schoolDetails ul li .deanName:hover 
+{
+	color: #000;
+} 
 .schoolDetails ul li .schoolLink 
 {
 	color:#2255aa;
@@ -410,7 +435,6 @@ h2.subheading
 {
 	float:right;
 	width:279px;
-	border-left:1px solid #e5e5ee;
 }
 .rightcontentContainer 
 {
@@ -423,6 +447,10 @@ h2.subheading
 .rightContent ul li a 
 {
 	display: block;
+}
+.rightContent ul li a:hover span  
+{
+	color: #000;
 }
 .rightContent ul li.clr 
 {
@@ -482,6 +510,10 @@ h2.subheading
 	font-size: 14px;
 	line-height: 22px;
 	color: #2255aa;
+}
+.footerContainer  ul li  a:hover 
+{
+	color: #000;
 }
 .footerContainer .footerRight  li 
 {
