@@ -230,6 +230,8 @@ body
 }
 
 
+
+
 /***************** css for navigation ******************/
 .leftNavigation 
 {
@@ -447,11 +449,12 @@ h2.subheading
 #footer 
 {
 	border-top:1px solid #e5e5ee;
+	background-color:#f9f9fc;
 }
 .footerContainer 
 {
 	width:990px;
 	margin:0px auto;
 	height:200px;
-	background-color:#fefefe;
+	
 }
