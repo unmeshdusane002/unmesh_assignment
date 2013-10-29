@@ -246,6 +246,10 @@ body
 	color:#2255aa;
 	word-wrap: break-word;
 }  
+.schoolDetails ul li .schoolLink:hover 
+{
+	color: #000;
+}
 .schoolDetails ul li  p 
 {
 	color:#959595;
@@ -269,12 +273,7 @@ body
 	display:block;
 	padding:6px 0px 6px 0px;
 }
-.leftNavigation li:hover i 
-{
-	background: url("../images/sarrow-right.png") no-repeat;
-	width: 15px;
-	height: 15px;
-}
+
 .leftNavigation li.clr 
 {
 	clear:both;
@@ -342,13 +341,20 @@ body
 {
 	background:url("../images/icons.png") -165px 0px no-repeat;
 }
+
 .leftNavigation  i.arrow
 {
-	background:url("../images/arrow.png") no-repeat;
+	background:url("../images/icons.png") 0px -15px no-repeat;
 	float:right;
-	width:15px;
-	height:15px;
+	width:12px;
+	height:12px;
 }  
+.leftNavigation li:hover i.arrow 
+{
+	background: url("../images/icons.png") -15px -15px no-repeat;
+	width: 12px;
+	height: 12px;
+}
 
 
 /***************** end of navigation **************************/
@@ -386,7 +392,7 @@ h2.subheading
 }
 .middleContent ul li.first i 
 {
-	background:url("../images/sarrow-left.png") no-repeat;
+	background:url("../images/icons.png") 0px -30px no-repeat;
 	width:10px;
 	height:14px;
 	display:block;
@@ -404,7 +410,7 @@ h2.subheading
 }
 .middleContent ul li.last i 
 {
-	background:url("../images/sarrow-right.png") no-repeat;
+	background:url("../images/icons.png") -15px -14px no-repeat;
 	width:10px;
 	height:14px;
 	display:block;
