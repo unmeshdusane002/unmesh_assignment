@@ -15,9 +15,9 @@ h1,h2,h3,h4,h5,h6,p,form,input[type="text"],input[type="button"]
 body 
 {
 	font-family:Arial;
+	font-size:12px;
 	margin:0px;
 	padding:0px;
-	font-size:12px;
 }
 .clr 
 {
@@ -82,7 +82,7 @@ body
 {
 	float:left;
 }
-.formContainer input[type="text"]
+.searchForm input[type="text"]
 {
 	width:368px;
 	line-height:28px;
@@ -90,20 +90,19 @@ body
 	float:left;
 	border:1px solid #d2d5e9;
 }
-.formContainer input[type="button"]
+.searchForm input[type="button"]
 {
 	
-	padding:0px 20px 0px 20px;
-	height:28px;
+	padding:6px 20px 6px 20px;
 	background-color:#3664b2;
-	line-height:28px;
 	float:left;
 	border:1px solid #2255aa;
 	font-size:14px;
 	color:#ffffff;
 	font-weight:bold;
+	text-shadow:1px 1px #2255aa;
 }
-.formContainer input[type="button"]:hover 
+.searchForm input[type="button"]:hover 
 {
 	background:#3f6cb5;
 }
@@ -193,10 +192,9 @@ body
 {
 	border-bottom:1px solid #e5e5ee;
 	margin-bottom:17px;
-}
-.schoolLogo img 
-{
-	margin:9px 0px 18px 36px;
+	padding:9px 55px 18px 36px;
+	max-width: 118px;
+	max-height: 250px;
 }
 .schoolName 
 {
@@ -204,6 +202,7 @@ body
 	font-weight:bold;
 	margin-bottom:17px;
 	display:block;
+	
 }
 .schoolName:hover 
 {
@@ -390,6 +389,7 @@ h2.subheading
 	margin-right:10px;
 	border:none;
 }
+
 .middleContent ul li.first i 
 {
 	background:url("../images/icons.png") 0px -30px no-repeat;
@@ -430,6 +430,47 @@ h2.subheading
 	height:88px;
 	border:1px solid #e5e5ee;
 	float: left;
+}
+
+
+.programs li span 
+{
+	max-width: 180px;
+}
+.programs li .programName 
+{
+	font-weight: bold;
+	color: #000;
+	float: left;
+}
+.programs li .nav
+{
+	float: right;
+}
+.programs li .nav a 
+{
+	padding: 4px 6px 4px 6px;
+	border: 1px solid #ccddff;
+	float: left;
+}
+.programs li .nav a.prev i
+{
+	background:url("../images/icons.png") -30px -30px;
+	height: 15px;
+	width: 15px; 
+	display: block;
+	
+}
+h2.programs
+{
+	margin-bottom: 5px;
+}
+.programs li .nav a.next i
+{
+	background:url("../images/icons.png") -15px -30px;
+	height: 15px;
+	width: 15px; 
+	display: block;
 }
 
 /***************** css for rightContent ***************/
@@ -476,7 +517,6 @@ h2.subheading
 	line-height:18px;
 }
 /************* footer **************/
-
 #footer 
 {
 	border-top:1px solid #e5e5ee;
@@ -526,7 +566,6 @@ h2.subheading
 }
 .footerContainer  ul li.copy 
 {
-	
 	line-height: 22px;
 	color: #959595;
 	margin-right: 0px;
