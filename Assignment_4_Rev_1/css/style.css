@@ -1,0 +1,574 @@
+/* CSS Document */
+ul,li,a
+{
+	list-style:none;
+	text-decoration:none;
+	margin:0px;
+	padding:0px;
+}
+h1,h2,h3,h4,h5,h6,p,form,input[type="text"],input[type="button"]
+{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+body 
+{
+	font-family:Arial;
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+}
+.clr 
+{
+	clear:both;
+	padding:0px;
+	margin:0px;
+}
+#header
+{
+	background:#dae6ff;
+	font-weight:bold;
+	color:#2255aa;
+	margin:0 0 39px 0px;
+	border-bottom:1px solid #bbccff;
+}
+.innerHeader
+{
+	width:990px;
+	margin:0px auto;
+}
+.headerLogo
+{
+	margin:20px 95px 21px 0px;
+	float:left;
+	background:url("../images/icons.png") -180px 0px no-repeat;
+	height:32px;
+	width:134px;
+	text-indent: -9999px;
+}
+.headerMiddle
+{
+	float:left;
+	margin-top:8px;
+}
+.headerMiddle ul
+{
+	float:left;
+	margin-bottom:5px;
+}
+.headerMiddle ul li 
+{
+	float:left; 
+}
+.headerMiddle ul li.clr 
+{
+	clear:both;
+	padding:0px;
+	margin:0px;
+}
+.headerMiddle ul li a 
+{
+	color:#2255aa;
+	margin-right:20px;
+	font-size:14px;
+	line-height:22px;
+	text-shadow:1px 1px #fff;
+}
+.headerMiddle ul li a:hover 
+{
+	color: #000;
+}
+.headerMiddle .searchForm 
+{
+	float:left;
+}
+.searchForm input[type="text"]
+{
+	width:368px;
+	line-height:28px;
+	height:28px;
+	float:left;
+	border:1px solid #d2d5e9;
+}
+.searchForm input[type="button"]
+{
+	
+	padding:6px 20px 6px 20px;
+	background-color:#3664b2;
+	float:left;
+	border:1px solid #2255aa;
+	font-size:14px;
+	color:#ffffff;
+	font-weight:bold;
+	text-shadow:1px 1px #2255aa;
+}
+.searchForm input[type="button"]:hover 
+{
+	background:#3f6cb5;
+}
+.headerRight 
+{
+	float:right;
+	margin-top:40px;
+}
+.headerRight  ul
+{
+	margin-right:20px;
+	float:left;
+}
+.headerRight  ul li 
+{
+	float:left;
+	margin-right:16px;
+}
+.headerRight  ul li a
+{
+	font-size:14px;
+	line-height: 22px;
+	text-shadow:1px 1px #fff;
+	color:#2255aa;
+}
+.headerRight  ul li a:hover 
+{
+	color: #000;
+}
+.headerRight ul li.login 
+{
+	margin-right:0px;
+}
+
+.headerRight .socialIcon 
+{
+	margin-right:0px;
+	float:left;
+}
+.headerRight .socialIcon li
+{
+	margin-right:5px;
+}
+.headerRight .socialIcon li.facebook 
+{
+	margin-right:0px;
+}
+.headerRight ul li a.twitter 
+{
+	background:url("../images/icons.png") no-repeat -335px 0px;
+	width:21px;
+	height:21px;
+	display:block;
+} 
+.headerRight ul li a.twitter:hover 
+{
+	background:url("../images/icons.png") no-repeat -75px -30px;
+} 
+.headerRight ul li a.fb
+{
+	background:url("../images/icons.png") no-repeat -314px 0px;
+	width:21px;
+	height:21px;
+	display:block;
+}
+.headerRight ul li a.fb:hover 
+{
+	background:url("../images/icons.png") no-repeat -45px -30px;
+}
+
+
+/******************** content *******************/
+
+#content 
+{
+	width:990px;
+	margin:0px auto;
+	margin-bottom:20px;
+	background: url("../images/back-bar.png") repeat-y;
+}
+.leftContent 
+{
+	float:left;
+	width:210px;
+	margin-right:19px;
+}
+.schoolLogo 
+{
+	margin-bottom: 17px;
+	border-bottom:1px solid #e5e5ee;
+}
+.schoolLogo img
+{
+	max-width: 200px;
+	max-height: 200px;
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.schoolName 
+{
+	color:#2255aa;
+	font-weight:bold;
+	margin-bottom:17px;
+	display:block;
+}
+.schoolName:hover 
+{
+	color: #000;
+}
+.socialButton 
+{
+	margin-bottom:15px;
+	height:25px;
+}
+.schoolDetails 
+{
+	margin:0px 10px 23px 0px;
+	line-height:18px;
+	word-wrap: break-word;
+}
+.schoolDetails .schoolSubBlock 
+{
+	margin-bottom:10px;
+}
+.schoolSubBlock .schoolSubHeading 
+{
+	color:#000;
+	font-weight:bold;
+	display:block; 
+}
+.schoolSubBlock .schoolSubText 
+{
+	color:#2255aa;
+	word-wrap: break-word;
+}
+.schoolSubBlock .schoolSubText:hover 
+{
+	color: #000;
+}
+.schoolSubBlock p 
+{
+	color:#959595;
+}
+
+
+
+/***************** css for navigation ******************/
+.leftNavigation 
+{
+	font-weight:bold;
+	
+}
+.leftNavigation  .placement 
+{
+	border-bottom: 1px solid #e5e5ee;
+}
+.leftNavigation li a 
+{
+	color:#2255aa;
+	line-height:18px;
+	border-top:1px solid #e5e5ee;
+	display:block;
+	padding:6px 0px 6px 0px;
+}
+
+.leftNavigation li.clr 
+{
+	clear:both;
+	padding:0px;
+	float:none;
+}
+.leftNavigation li a span 
+{
+	margin-right: 5px;
+	max-width: 100px;
+}
+.leftNavigation li a i 
+{
+	width:15px;
+	height:15px;
+	margin-right:5px;
+	float: left;
+}
+.leftNavigation  .overview a i.overview 
+{
+	background: no-repeat url("../images/icons.png") 0px 0px;
+}
+.leftNavigation  .faculty a i.faculty
+{
+	background:url("../images/icons.png") -15px 0px no-repeat;
+} 
+.leftNavigation  .infra a i.infra
+{
+	background:url("../images/icons.png") -30px 0px no-repeat;
+}
+.leftNavigation  .teaching a i.teaching
+{
+	background:url("../images/icons.png") -45px 0px no-repeat;
+}
+.leftNavigation  .student a i.student
+{
+	background:url("../images/icons.png") -60px 0px no-repeat;
+
+}
+.leftNavigation  .location a i.location
+{
+	background:url("../images/icons.png") -75px 0px no-repeat;
+}
+.leftNavigation  .curriculum a i.curriculum
+{
+	background:url("../images/icons.png") -90px 0px no-repeat;
+}
+.leftNavigation  .global a i.global
+{
+	background:url("../images/icons.png") -105px 0px no-repeat;
+}
+.leftNavigation  .coporate a i.coporate
+{
+	background:url("../images/icons.png") -120px 0px no-repeat;
+}
+.leftNavigation  .alumini a i.alumini
+{
+	background:url("../images/icons.png") -135px 0px no-repeat;
+}
+.leftNavigation  .bog a i.bog
+{
+	background:url("../images/icons.png") -150px 0px no-repeat;
+}
+.leftNavigation  .placement a i.placement
+{
+	background:url("../images/icons.png") -165px 0px no-repeat;
+}
+
+.leftNavigation  .arrow
+{
+	background:url("../images/icons.png") 0px -15px no-repeat;
+	float:right;
+	width:10px;
+	height:15px;
+	display:inline;
+}  
+.leftNavigation li:hover .arrow 
+{
+	background: url("../images/icons.png") -15px -15px no-repeat;
+	width: 10px;
+	height: 15px;
+}
+
+
+/***************** end of navigation **************************/
+
+.middleContent
+{
+	float:left;
+	width:460px;
+}
+.middleContent ul 
+{
+	display: block;
+}
+h2.subheading 
+{
+	font-size:14px;
+	line-height:18px;
+	color:#000;
+	padding:7px 10px 7px 10px;
+	background:#ccddff url("../images/icons.png") bottom;
+	margin-bottom:10px;
+}
+.middleContent ul li 
+{
+	float:left;
+	margin-right:10px;
+}
+.middleContent ul li.first
+{
+	background:url("../images/slide-left.png") repeat-y;
+	width:30px;
+	height:90px;
+	margin-right:10px;
+	border:none;
+}
+
+.middleContent ul li.first i 
+{
+	background:url("../images/icons.png") 0px -30px no-repeat;
+	width:10px;
+	height:14px;
+	display:block;
+	margin:38px 0px 0px 10px;
+}
+.middleContent ul li.last
+{
+	background:url("../images/slide-right.png") repeat-y;
+	width:28px;
+	height:90px;
+	margin-right:0px;
+	float:right;
+	border:none;
+	padding: 0;
+}
+.middleContent ul li.last i 
+{
+	background:url("../images/icons.png") -15px -14px no-repeat;
+	width:10px;
+	height:14px;
+	display:block;
+	margin:38px 0px 0px 10px;
+}
+.middleContent ul li.clr 
+{
+	float:none;
+	clear:both;
+	padding:0;
+	margin:0;
+	border:0px;
+}
+.middleContent ul li img 
+{
+	width:118px;
+	height:88px;
+	border:1px solid #e5e5ee;
+	float: left;
+}
+
+
+.programs li span 
+{
+	max-width: 180px;
+}
+.programs li .programName 
+{
+	font-weight: bold;
+	color: #000;
+	float: left;
+}
+.programs li .nav
+{
+	float: right;
+}
+.programs li .nav a 
+{
+	padding: 4px 6px 4px 6px;
+	border: 1px solid #ccddff;
+	float: left;
+}
+.programs li .nav a.prev i
+{
+	background:url("../images/icons.png") -30px -30px;
+	height: 15px;
+	width: 15px; 
+	display: block;
+	
+}
+h2.programs
+{
+	margin-bottom: 5px;
+}
+.programs li .nav a.next i
+{
+	background:url("../images/icons.png") -15px -30px;
+	height: 15px;
+	width: 15px; 
+	display: block;
+}
+
+/***************** css for rightContent ***************/
+.rightContent 
+{
+	float:right;
+	width:279px;
+}
+.rightcontentContainer 
+{
+	margin-left:20px;
+}
+.rightContent ul li 
+{
+	margin-bottom:10px;
+}
+.rightContent ul li a 
+{
+	display: block;
+}
+.rightContent ul li a:hover span  
+{
+	color: #000;
+}
+.rightContent ul li.clr 
+{
+	clear:both;
+	float:none;
+	padding:0px;
+	margin:0px;
+} 
+.rightContent ul li img 
+{
+	float:left;
+	max-width:34px;
+	max-height:34px;
+	border:1px solid #e5e5ee;
+	margin-right:8px;	
+	display: block;
+}
+.rightContent ul li span 
+{
+	color:#2255aa;
+	line-height:18px;
+	display: block;
+	float: left;
+	max-width: 200px;
+}
+/************* footer **************/
+#footer 
+{
+	border-top:1px solid #e5e5ee;
+	background-color:#f9f9fc;
+}
+.footerContainer 
+{
+	width:990px;
+	margin:0px auto;
+}
+.footerContainer ul 
+{
+	margin-top: 16px;
+	padding-bottom: 50px;
+}
+.footerContainer .footerLeft 
+{
+	float:left;
+}
+.footerContainer .footerRight 
+{
+	float: right;
+}
+.footerContainer  ul li 
+{
+	float: left;
+	margin-right: 15px;
+ }
+.footerContainer  ul li  a 
+{
+	font-size: 14px;
+	line-height: 22px;
+	color: #2255aa;
+}
+.footerContainer  ul li  a:hover 
+{
+	color: #000;
+}
+.footerContainer .footerRight  li 
+{
+	margin-right: 10px;
+}
+.footerContainer .footerRight   li a 
+{
+	font-size: 12px;
+	line-height: 22px;
+}
+.footerContainer  ul li.copy 
+{
+	line-height: 22px;
+	color: #959595;
+	margin-right: 0px;
+}
