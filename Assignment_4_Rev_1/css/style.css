@@ -38,7 +38,7 @@ body
 	width:990px;
 	margin:0px auto;
 }
-.headerLogo
+.logo
 {
 	margin:20px 95px 21px 0px;
 	float:left;
@@ -60,6 +60,7 @@ body
 .headerMiddle ul li 
 {
 	float:left; 
+	margin-right:20px;
 }
 .headerMiddle ul li.clr 
 {
@@ -70,7 +71,6 @@ body
 .headerMiddle ul li a 
 {
 	color:#2255aa;
-	margin-right:20px;
 	font-size:14px;
 	line-height:22px;
 	text-shadow:1px 1px #fff;
