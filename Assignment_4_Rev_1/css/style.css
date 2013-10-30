@@ -251,7 +251,7 @@ body
 	font-weight:bold;
 	
 }
-.leftNavigation  .placement 
+.leftNavigation  li.placement 
 {
 	border-bottom: 1px solid #e5e5ee;
 }
