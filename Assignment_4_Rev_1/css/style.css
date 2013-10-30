@@ -65,15 +65,14 @@ body
 .headerMiddle ul li.clr 
 {
 	clear:both;
-	padding:0px;
-	margin:0px;
+	float: none;
 }
 .headerMiddle ul li a 
 {
 	color:#2255aa;
 	font-size:14px;
 	line-height:22px;
-	text-shadow:1px 1px #fff;
+	text-shadow:0px 1px #fff;
 }
 .headerMiddle ul li a:hover 
 {
@@ -101,7 +100,7 @@ body
 	font-size:14px;
 	color:#ffffff;
 	font-weight:bold;
-	text-shadow:1px 1px #2255aa;
+	text-shadow:0px 1px #2255aa;
 }
 .searchForm input[type="button"]:hover 
 {
@@ -158,10 +157,7 @@ body
 	height:21px;
 	display:block;
 } 
-.headerRight ul li a.twitter:hover 
-{
-	background:url("../images/icons.png") no-repeat -75px -30px;
-} 
+ 
 .headerRight ul li a.fb
 {
 	background:url("../images/icons.png") no-repeat -314px 0px;
@@ -169,10 +165,7 @@ body
 	height:21px;
 	display:block;
 }
-.headerRight ul li a.fb:hover 
-{
-	background:url("../images/icons.png") no-repeat -45px -30px;
-}
+
 
 
 /******************** content *******************/
@@ -222,7 +215,7 @@ body
 }
 .schoolDetails 
 {
-	margin:0px 10px 23px 0px;
+	margin:0px 10px 25px 0px;
 	line-height:18px;
 	word-wrap: break-word;
 }
@@ -476,7 +469,7 @@ h2.programs
 .rightContent 
 {
 	float:right;
-	width:279px;
+	width:280px;
 }
 .rightcontentContainer 
 {
@@ -518,6 +511,7 @@ h2.programs
 	float: left;
 	max-width: 200px;
 }
+
 /************* footer **************/
 #footer 
 {
