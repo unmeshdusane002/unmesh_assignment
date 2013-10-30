@@ -494,14 +494,21 @@ h2.programs
 	padding:0px;
 	margin:0px;
 } 
-.rightContent ul li img 
+.rightContent ul li .imageContainer 
 {
-	float:left;
-	max-width:34px;
-	max-height:34px;
 	border:1px solid #e5e5ee;
 	margin-right:8px;	
+	width: 33px;
+	height: 33px;
+	float: left;
+}
+.rightContent ul li img 
+{
+	max-width:33px;
+	margin: 0px auto;
+	max-height:33px;
 	display: block;
+	border: none;
 }
 .rightContent ul li span 
 {
