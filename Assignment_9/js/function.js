@@ -12,14 +12,14 @@ $(document).ready(function(){
 		});*/
 
 
-$('.tabContent').hide();
-$('.middleTab a').bind('click',function(e){
-	$('.middleTab a.active ').removeClass('active');
-	$('.tabContent:visible').hide();
-	$(this.hash).show();
-	$(this).addClass('active');
-	e.preventDefault();
-}).filter(':first').click();
+    $('.tabContent').hide();
+    $('.middleTab a').bind('click',function(e){
+	  $('.middleTab a.active ').removeClass('active');
+	  $('.tabContent:visible').hide();
+	  $(this.hash).show();
+	  $(this).addClass('active');
+	   e.preventDefault();
+  }).filter(':first').click();
 
 
     $('.tab-section').hide();
@@ -32,19 +32,7 @@ $('.middleTab a').bind('click',function(e){
    	 }).filter(':first').click();
 
 
-    $("#tagcloud a").tagcloud({ 
-     size: { 
-       start: 10,
-       middle:36, 
-       end: 40, 
-       unit: 'px' 
-     }, 
-     color: { 
-       start: "#e5e5e5", 
-       middle:"#ffdda1",
-       end: "#7fa5cf" 
-     } 
-  }); 
+    
 	
 });
 

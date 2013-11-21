@@ -31,6 +31,7 @@ h3
 	line-height: 24px;
 	font-weight: normal;
 	margin: 0px;
+	color: #222222;
 }
 h4 
 {
@@ -66,8 +67,8 @@ h4
 	height: 66px;
 	width: 200px;
 	display: block;
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.7);
 	box-shadow: 0px 1px 3px rgba(0,0,0,.7);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.7);
 	-moz-box-shadow:0px 1px 3px rgba(0,0,0,.7);
 	position: absolute;
 	margin-top: -2px;
@@ -83,7 +84,7 @@ h4
 }
 #header .nav li.last 
 {
-	background: url("../images/menuBorder.png") bottom left no-repeat,url("../images/menuBorder.png") bottom right no-repeat;;
+	background: url("../images/menuBorder.png") bottom left no-repeat,url("../images/menuBorder.png") bottom right no-repeat;
 }
 #header .nav li a.active 
 {
@@ -107,6 +108,7 @@ h4
 #header .nav li a:hover 
 {
 	color: #000;
+	background: #fff;
 }
 #header .nav li a:first-letter 
 {
@@ -124,36 +126,48 @@ h4
 {
 	background:url("../images/slice.png") 0px 0px no-repeat
 }
+#header .nav .home:hover i 
+{
+	background:url("../images/slice.png") 0px -120px no-repeat
+}
 #header .nav .about i 
 {
 	background:url("../images/slice.png") -18px 0px no-repeat
 }
+#header .nav .about:hover i 
+{
+	background:url("../images/slice.png") -19px -120px no-repeat
+}
 #header .nav .blog i 
 {
 	background:url("../images/slice.png") -36px 0px no-repeat
+}
+#header .nav .blog:hover i 
+{
+	background:url("../images/slice.png") -38px -120px no-repeat
 }
 #header .nav .last i 
 {
 	background:url("../images/slice.png") -54px 0px no-repeat;
 	width:20px;
 }
-
+#header .nav .last:hover i 
+{
+	background:url("../images/slice.png") -55px -120px no-repeat;
+	width:20px;
+}
 /************ end of header ************/
 
 /******** start of content **********/
 #content .contentTop
 {
 	background:url("../images/back.png") repeat;
-	
 }
 #content h2 
 {
-
 	text-align: center;
-
 	color: #fff;
-	margin-top: 50px;
-	margin-bottom: 38px;
+	margin: 50px 0px 38px 0px;
 	font-weight: normal;
 }
 #content h2 .headTitle 
@@ -166,12 +180,11 @@ h4
 /*********** css for slider **********/
 #content .sliderWrapper 
 {
-	margin-bottom: 30px;
+	margin-bottom: 70px;
 }
 #content .sliderWrapper img 
 {
 	border-radius:5px; 
-
 }
 #content .sliderWrapper .sliderImages 
 {
@@ -195,9 +208,8 @@ h4
 {
 	font-style: italic;
 	font-weight: normal;
-	margin-top: 18px;
+	margin: 18px 0px 6px 0px;
 	color: #ffcc44;
-	margin-bottom: 6px;
 }
 #content .sliderWrapper .sliderContent p 
 {
@@ -206,10 +218,6 @@ h4
 	color: #cccccc;
 	text-align: justify;
 	margin-bottom: 20px;
-}
-#content .sliderWrapper .sliderContent .sliderContentBottom 
-{
-	margin-left: 0px;
 }
 #content .sliderWrapper .sliderContent .sliderContentBottom a
 {
@@ -235,15 +243,13 @@ h4
 }
 #content .sliderWrapper .sliderContent .sliderContentBottom a.btnDownload 
 {
-	
 	color: #3355aa;
 	font-style: italic;
-	background: -webkit-linear-gradient(top,#ffffff,#ffffff);
-	background: -moz-linear-gradient(top,#ffffff,#ffffff);
+	background: -webkit-linear-gradient(top,#f5f6f7,#dce4ed);
+	background: -moz-linear-gradient(top,#f5f6f7,#dce4ed);
 	border:1px solid #bdbdbd;
 	border-radius:3px; 
-	padding-left: 8px;
-	padding-right: 8px;
+	padding: 0px 8px;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -255,7 +261,6 @@ h4
 	width: 15px;
 	display: block;
 	float: left;
-	
 }
 #content .sliderWrapper .btnDownload i 
 {
@@ -269,6 +274,7 @@ h4
 {
 	margin: 0px;
 	color: #fff;
+	margin-top: -40px;
 }
 #content .container .sliderEarth
 {
@@ -276,9 +282,8 @@ h4
 	right: 0px;
 	border: 1px solid #1b3a84;
 	padding: 8px;
-	border-top-left-radius:5px;
-	border-bottom-left-radius:5px;
-	background: #35a;
+	border-radius: 5px 0px 0px 5px;
+	background: #3053a7;
 	-webkit-box-shadow: inset 0 2px 3px rgba(255,255,255,0.3);
 	box-shadow: inset 0 2px 3px rgba(255,255,255,0.3);
 	margin-top: 5px;
@@ -302,8 +307,7 @@ h4
 	display: block;
 	margin-bottom: 3px;
 	font-size: 25px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
+	border-radius: 0px 4px 4px 0px;
 	color: #cccccc;
 	box-shadow: inset 0 0 4px #f5f5f5;
 	-moz-box-shadow: inset 0 0 4px #f5f5f5;
@@ -314,12 +318,13 @@ h4
 {
 	color: #3354a9;
 }
+
+
 #content .middleTab li 
 {
 	float: left;
 	color: #fff;
 	margin-right: 8px;
-	
 }
 #content .middleTab li.clr 
 {
@@ -335,12 +340,11 @@ h4
 	font-style: italic;
 	padding:8px 15px 8px 15px;
 	text-decoration: none;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
+	border-radius: 5px 5px 0px 0px;
 	text-shadow: 0 1px #037;
 	box-shadow: inset 0 1px 1px rgba(255,255,255,.2);
-	background: -webkit-linear-gradient(top,#003377,#003377);
-	background: -moz-linear-gradient(top,#003377,#003377);
+	background: -webkit-linear-gradient(top,#3254a9,#254c9c);
+	background: -moz-linear-gradient(top,#3254a9,#254c9c);
 }
 #content .middleTab li a.active 
 {
@@ -371,7 +375,7 @@ h4
 #content .middleContent 
 {
 	border: 1px solid #cccccc;
-	border-radius: 4px;
+	border-radius: 3px;
 	box-shadow: 0 8px 6px -6px #ededed;
 	margin-bottom: 40px;
 }
@@ -383,7 +387,6 @@ h4
 	box-shadow: 4px 0px 5px #f2f2f2;
 	-webkit-box-shadow: 4px 0px 5px #f2f2f2;
 }
-
 
 /*********** start of search form *******/
 #content .middleContentLeft  .searchForm 
@@ -483,7 +486,6 @@ h4
 }
 #content .middleContentLeft .tabs li a 
 {
-	
 	display: block;
 	padding: 7px 12px;
 	border: 1px solid #cccccc;
@@ -492,32 +494,30 @@ h4
 	line-height: 24px; 
 	font-style: italic;
 	color: #3355aa;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-radius: 5px 5px 0px 0px;
 	text-decoration: none;
 	background: -webkit-linear-gradient(bottom,#e6edf5,#ffffff);
 }
-
 #content .middleContentLeft .tab-section
 {
-	
 	border-top: 1px solid #cccccc;
 	font-size: 14px;
 	line-height: 24px;
 	box-shadow: 0 -3px 8px #eaeaea;
 	margin-bottom: 20px;
-	padding-top: 11px;
-	/*box-shadow: 0px -2px 5px 5px #cccccc;
-	-webkit-box-shadow: 0px -5px 9px 2px #eaeaea;*/
-	
+	padding-top: 7px;
+	min-height: 500px;
 }
-
 #content .middleContentLeft .tab-section ul li 
 {
 	padding:20px 19px;
 	border-bottom: 1px solid #dddddd;
+	background:linear-gradient(bottom,#f3f6fa,#ffffff);
 	background: -webkit-linear-gradient(bottom,#f3f6fa,#ffffff);
+	background: -moz-linear-gradient(bottom,#f3f6fa,#ffffff);
+	box-shadow:0px 2px 5px #f2f2f2; 
 	-webkit-box-shadow:0px 2px 5px #f2f2f2; 
+	-moz-box-shadow:0px 2px 5px #f2f2f2; 
 }
 #content .middleContentLeft .tab-section .author 
 {
@@ -536,9 +536,7 @@ h4
 	margin-bottom: 12px;
 	line-height: 18px;
 	font-style: normal;
-	text-wrap:brak-all;
 }
-
 #content .middleContentLeft .tab-section .authorDownload 
 {
 	display: table-cell;
@@ -549,9 +547,8 @@ h4
 	text-decoration: none;
 	float: left;
 	font-size: 14px;
-	line-height: 16px;
-	display: table-cell;
-	
+	line-height: 23px;
+	display: block;	
 }
 #content .middleContentLeft .tab-section .authorDownload a i 
 {
@@ -575,14 +572,13 @@ h4
 
 #content .middleContentLeft .tab-section a.btnDownload 
 {
-	
 	color: #3355aa;
 	font-style: italic;
 	background: -webkit-linear-gradient(top,#ffffff,#e0e5ed);
 	background: -moz-linear-gradient(top,#ffffff,#e0e5ed);
 	border:1px solid #bdbdbd;
 	border-radius:3px; 
-	padding: 0px 8px;
+	padding: 0px 12px;
 }
 #content .middleContentLeft .tab-section a.btnDownload  i 
 {
@@ -594,6 +590,7 @@ h4
 #content .middleContentLeft .loadMoreWrapper
 {
 	text-align: center;
+	margin-bottom: 30px;
 }
 #content .middleContentLeft .btnLoadMore
 {
@@ -601,13 +598,15 @@ h4
 	text-shadow:none;
 	font-family: "Times New Roman";
 	font-style: italic;
+	background: linear-gradient(bottom,#244b9b,#3254a9);
 	background: -webkit-linear-gradient(bottom,#244b9b,#3254a9);
+	background: -moz-linear-gradient(bottom,#244b9b,#3254a9);
 	box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
 	color: #fff;
 	font-size: 18px;
 	line-height: 30px;
 	padding:5px 15px;
-	margin-bottom: 30px;
+	
 }
 /********* end of middle tab section ***********/
 /********** middle content right ***********/
@@ -615,7 +614,6 @@ h4
 {
 	float: left;
 	width: 275px;
-	
 }
 #content .middleContent .middleContentRight .tagCloudWrapper 
 {
@@ -631,24 +629,29 @@ h4
 {
 	background: url("../images/footerBack.png") repeat;
 }
+
 #footer ul 
 {
+	margin: 0px;
 	margin-left: 18px;
 }
 #footer ul li 
 {
+	margin: 0px;
 	float: left;
 	padding: 0px 7px;
 }
-
 #footer ul li a 
 {
-	
 	font-size: 14px;
 	line-height: 16px;
 	font-style: italic;
 	text-decoration: none;
 	color: #3355aa;
+}
+#footer ul li a:hover 
+{
+	color: #000;
 }
 #footer ul li.clr 
 {
@@ -661,8 +664,7 @@ h4
 }
 #footer .footerTop 
 {
-	margin-top: 18px;
-	margin-bottom: 10px;
+	margin:18px 0px 13px 0px;
 	padding-bottom: 10px;
 	box-shadow:0 8px 6px -6px #dadada;
 }
@@ -688,7 +690,6 @@ h4
 	float: left;
 	border-right:1px solid #c5c5c5;
 }
-
 #footer .footerBottom 
 {
 	font-size: 13px;
@@ -707,7 +708,13 @@ h4
 }
 #footer .footerBottom ul li
 {
+	padding: 0px;
 	margin-right: 5px;
+	line-height: 15px;
+}
+#footer  ul li.menuLast 
+{
+	padding-right: 20px;
 }
 #footer .footerBottom ul li a
 {
@@ -724,13 +731,25 @@ h4
 }
 #footer .footerBottom ul li.fb a  i
 {
-	background: url("../images/slice.png") 0px -90px no-repeat;
+	background: url("../images/slice.png") -32px -90px no-repeat;
+}
+#footer .footerBottom ul li.fb a:hover  i
+{
+	background: url("../images/slice.png") -80px -90px no-repeat;
 }
 #footer .footerBottom ul li.twitter a i
 {
 	background: url("../images/slice.png") -16px -90px no-repeat;
 }
+#footer .footerBottom ul li.twitter a:hover i
+{
+	background: url("../images/slice.png") -64px -90px no-repeat;
+}
 #footer .footerBottom ul li.linkedin a i
 {
-	background: url("../images/slice.png") -32px -90px no-repeat;
+	background: url("../images/slice.png") 0px -90px no-repeat;
+}
+#footer .footerBottom ul li.linkedin a:hover  i 
+{
+	background: url("../images/slice.png") -48px -90px no-repeat;
 }
