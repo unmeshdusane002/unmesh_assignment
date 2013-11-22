@@ -278,7 +278,8 @@ h4
 }
 #content .container .sliderEarth
 {
-	position: absolute;
+	    
+	position: fixed;
 	right: 0px;
 	border: 1px solid #1b3a84;
 	padding: 8px;
@@ -664,17 +665,32 @@ h4
 }
 #footer .footerTop 
 {
-	margin:18px 0px 13px 0px;
-	padding-bottom: 10px;
-	box-shadow:0 8px 6px -6px #dadada;
+	/*margin:18px 20px 13px 20px;
+	padding-bottom: 10px;*/
+	padding: 18px 0px 13px 0px;
+
+	margin: 0px 20px 10px 20px;
+	
+	background: url("../images/footerDivider.png") center bottom no-repeat, url("../images/footerDivider.png") center top no-repeat;
+
+
 }
 #footer .footerMenuLeft 
 {
 	float: left;
 }
+#footer .footerMenuLeft li:first-child 
+{
+	padding-left: 0px;
+}
+#footer .footerMenuLeft li:last-child 
+{
+	padding-right: 0px;
+}
 #footer .footerMenuLeft 
 {
-	padding-left: 0px
+	padding-left: 0px;
+	margin:0px;
 }
 #footer .footerMenuLeft li 
 {
@@ -684,23 +700,30 @@ h4
 #footer .footerMenuRight 
 {
 	float: right;
+	margin-left: 20px;
+	
 }
 #footer .footerMenuRight li 
 {
 	float: left;
 	border-right:1px solid #c5c5c5;
 }
+#footer .footerMenuRight li:last-child 
+{
+	padding-right: 0px;
+}
 #footer .footerBottom 
 {
 	font-size: 13px;
 	font-style: italic;
 	color: #888888;
-	margin-bottom: 15px;
+	margin: 0px 20px 15px 20px;
+	
 }
 #footer .footerBottom span 
 {
 	float: left;
-	margin-left: 18px;
+	
 } 
 #footer .footerBottom ul 
 {
@@ -712,10 +735,7 @@ h4
 	margin-right: 5px;
 	line-height: 15px;
 }
-#footer  ul li.menuLast 
-{
-	padding-right: 20px;
-}
+
 #footer .footerBottom ul li a
 {
 	display: block;
