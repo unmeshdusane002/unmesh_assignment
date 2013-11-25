@@ -22,7 +22,7 @@ $(document).ready(function(){
   }).filter(':first').click();
 
 
-    $('.tab-section').hide();
+   $('.tab-section').hide();
     $('.tabs a').bind('click', function(e){
         $('.tabs a.current').removeClass('current');
         $('.tab-section:visible').hide();
@@ -31,8 +31,8 @@ $(document).ready(function(){
         e.preventDefault();
    	 }).filter(':first').click();
 
-
-    
+   
+  
 	
 });
 

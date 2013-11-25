@@ -381,14 +381,15 @@ h4
 	border-radius: 3px;
 	box-shadow: 0 8px 6px -6px #ededed;
 	margin-bottom: 40px;
+	background: url("../images/mback.png") repeat-y;
 }
 #content .middleContent .middleContentLeft 
 {
 	float: left;
 	width: 639px;
-	border-right: 1px solid #cccccc;
+	/*border-right: 1px solid #cccccc;
 	box-shadow: 4px 0px 5px #f2f2f2;
-	-webkit-box-shadow: 4px 0px 5px #f2f2f2;
+	-webkit-box-shadow: 4px 0px 5px #f2f2f2;*/
 }
 
 /*********** start of search form *******/
@@ -619,7 +620,7 @@ h4
 #content .middleContent .middleContentRight
 {
 	float: left;
-	width: 275px;
+	width: 299px;
 }
 #content .middleContent .middleContentRight .tagCloudWrapper 
 {
