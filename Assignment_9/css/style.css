@@ -246,9 +246,12 @@ h4
 	color: #3355aa;
 	font-style: italic;
 	background: -webkit-linear-gradient(top,#f5f6f7,#dce4ed);
+	background: -o-linear-gradient(top,#f5f6f7,#dce4ed);
 	background: -moz-linear-gradient(top,#f5f6f7,#dce4ed);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f7', endColorstr='#dce4ed',GradientType=0 ); /* IE6-9 */
 	border:1px solid #bdbdbd;
-	border-radius:3px; 
+	border-radius:3px;
+	behavior: url(border-radius.htc);
 	padding: 0px 8px;
 	display: table-cell;
 	vertical-align: middle;
@@ -268,8 +271,8 @@ h4
 }
 /*************end of slider **************/
 
-/********** css for tab ***********/
 
+/********** css for tab ***********/
 #content .container .middleTab
 {
 	margin: 0px;
@@ -278,7 +281,6 @@ h4
 }
 #content .container .sliderEarth
 {
-	    
 	position: fixed;
 	right: 0px;
 	border: 1px solid #1b3a84;
@@ -346,13 +348,13 @@ h4
 	box-shadow: inset 0 1px 1px rgba(255,255,255,.2);
 	background: -webkit-linear-gradient(top,#3254a9,#254c9c);
 	background: -moz-linear-gradient(top,#3254a9,#254c9c);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3254a9', endColorstr='#254c9c',GradientType=0 ); /* IE6-9 */
 }
 #content .middleTab li a.active 
 {
 	color: #000;
 	text-shadow: 0 1px #fff;
-	background: -webkit-linear-gradient(top,#fff,#fff);
-	background: -moz-linear-gradient(top,#fff,#fff);
+	background: #fff;
 	color: #000;
 }
 
@@ -498,6 +500,7 @@ h4
 	border-radius: 5px 5px 0px 0px;
 	text-decoration: none;
 	background: -webkit-linear-gradient(bottom,#e6edf5,#ffffff);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f7', endColorstr='#e6edf5',GradientType=0 ); /* IE6-9 */
 }
 #content .middleContentLeft .tab-section
 {
@@ -577,6 +580,7 @@ h4
 	font-style: italic;
 	background: -webkit-linear-gradient(top,#ffffff,#e0e5ed);
 	background: -moz-linear-gradient(top,#ffffff,#e0e5ed);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e5ed',GradientType=0 ); /* IE6-9 */
 	border:1px solid #bdbdbd;
 	border-radius:3px; 
 	padding: 0px 12px;
@@ -602,6 +606,7 @@ h4
 	background: linear-gradient(bottom,#244b9b,#3254a9);
 	background: -webkit-linear-gradient(bottom,#244b9b,#3254a9);
 	background: -moz-linear-gradient(bottom,#244b9b,#3254a9);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3254a9', endColorstr='#244b9b',GradientType=0 ); /* IE6-9 */
 	box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
 	color: #fff;
 	font-size: 18px;
