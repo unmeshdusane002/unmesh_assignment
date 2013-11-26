@@ -54,8 +54,7 @@ h4
 }
 .header .headerTopBorder 
 {
-	height: 2px;
-	background: url("../images/header-top-border.png") repeat-x;
+	background: url("../images/header-top-border.png") top repeat-x;
 }
 .header .headerContainer
 {
@@ -71,18 +70,19 @@ h4
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.7);
 	-moz-box-shadow:0px 1px 3px rgba(0,0,0,.7);
 	position: absolute;
-	margin-top: -2px;
+	
 }
 .header .nav
 {
 	float: right;
 	margin-right: 0px;
+	margin-top: 2px;
 }
 .header .nav li 
 {
 	background: url("../images/menuBorder.png") bottom left no-repeat;
 }
-.header .nav li.last 
+.header .nav li:last-child 
 {
 	background: url("../images/menuBorder.png") bottom left no-repeat,url("../images/menuBorder.png") bottom right no-repeat;
 }
@@ -102,7 +102,6 @@ h4
 	font-size: 15px;
 	line-height: 18px;
 	font-style: italic;
-	text-transform: lowercase;
 	padding:13px 15px 12px 15px;
 }
 .header .nav li a:hover 
@@ -146,12 +145,12 @@ h4
 {
 	background:url("../images/slice.png") -38px -120px no-repeat
 }
-.header .nav .last i 
+.header .nav .contact i 
 {
 	background:url("../images/slice.png") -54px 0px no-repeat;
 	width:20px;
 }
-.header .nav .last:hover i 
+.header .nav .contact:hover i 
 {
 	background:url("../images/slice.png") -55px -120px no-repeat;
 	width:20px;
