@@ -51,6 +51,7 @@ h4
 	border-bottom: 1px solid #0a0b0e;
 	box-shadow: 0px 0px 5px #000;
 	position: static;
+	background:#fff url("../images/headerback1.png") left bottom repeat;
 }
 .header .headerTopBorder 
 {
@@ -82,20 +83,7 @@ h4
 {
 	background: url("../images/menuBorder.png") bottom left no-repeat;
 }
-.header .nav li:last-child 
-{
-	background: url("../images/menuBorder.png") bottom left no-repeat,url("../images/menuBorder.png") bottom right no-repeat;
-}
-.header .nav li a.active 
-{
-	color: #222222;
-}
-.header .nav li:after 
-{
-	background: url("../images/slice.png") 0px -18px no-repeat;
-	width: 2px;
-	height: 43px;
-}
+
 .header .nav li a 
 {
 	color: #3355aa;
@@ -107,13 +95,22 @@ h4
 .header .nav li a:hover 
 {
 	color: #000;
-	
 }
-.header .nav li a:first-letter 
+.header .nav li:hover a 
+{
+	background: #fff;
+}
+.header .nav li.active a 
+{
+	background: #fff;
+	box-shadow: none;
+	color: #000;
+}
+.header .nav a:first-letter 
 {
 	text-transform: capitalize;
 }
-.header .nav li a i 
+.header .nav a i 
 {
 	width: 18px;
 	height: 18px;
@@ -218,7 +215,7 @@ h4
 	text-align: justify;
 	margin-bottom: 20px;
 }
-.content .sliderWrapper .sliderContent .sliderContentBottom a
+.content .sliderWrapper .sliderContentBottom a
 {
 	float: left;
 	font-size: 14px;
@@ -227,7 +224,7 @@ h4
 	text-decoration: none;
 	color: #cccccc;
 }
-.content .sliderWrapper .sliderContent .sliderContentBottom a.btnPdfSize 
+.content .sliderWrapper .sliderContentBottom a.btnPdfSize 
 {
 	max-width: 120px;
 }
@@ -272,11 +269,15 @@ h4
 
 
 /********** css for tab ***********/
+.middleTabWrapper 
+{
+	margin-top: -40px;
+}
 .content .container .middleTab
 {
 	margin: 0px;
 	color: #fff;
-	margin-top: -40px;
+	
 }
 .content .container .sliderEarth
 {
@@ -516,9 +517,10 @@ h4
 {
 	padding:20px 19px;
 	border-bottom: 1px solid #dddddd;
-	background:linear-gradient(bottom,#f3f6fa,#ffffff);
+	/*background:linear-gradient(bottom,#f3f6fa,#ffffff);
 	background: -webkit-linear-gradient(bottom,#f3f6fa,#ffffff);
-	background: -moz-linear-gradient(bottom,#f3f6fa,#ffffff);
+	background: -moz-linear-gradient(bottom,#f3f6fa,#ffffff);*/
+	background:#fff url("../images/listback.png") left bottom repeat-x;
 	box-shadow:0px 2px 5px #f2f2f2; 
 	-webkit-box-shadow:0px 2px 5px #f2f2f2; 
 	-moz-box-shadow:0px 2px 5px #f2f2f2; 
@@ -623,8 +625,7 @@ h4
 }
 .content .middleContent .middleContentRight .tagCloudWrapper 
 {
-	margin: 30px 30px 0px 20px;
-	max-width: 245px;
+	padding: 30px 30px 0px 20px;
 }
 
 /*********** end of middle content right **********/

@@ -11,6 +11,12 @@ $(document).ready(function(){
 					
 		});*/
 
+	$(".nav li").click(function() {
+			$(".nav li").removeClass("active");
+			$(this).addClass("active");
+							
+	});
+
 
     $('.tabContent').hide();
     $('.middleTab a').bind('click',function(e){
