@@ -1,0 +1,745 @@
+@import "icons/*.png" 
+body, h1, h2, h3, h4, ul, li
+  padding: 0px
+  margin: 0px
+
+ul, li
+  list-style: none
+
+a
+  text-decoration: none
+
+/*********** to use external fonts *****
+
+@font-face
+  font-family: roboto1
+  src: url("../font/Roboto-Bold.ttf")
+
+
+@font-face
+  font-family: roboto-med
+  src: url("../font/Roboto-Medium.ttf")
+
+
+@font-face
+  font-family: roboto-regular
+  src: url("../font/Roboto-Regular.ttf")
+
+
+body
+  background-color: #f3f3f3
+
+.clr
+  clear: both
+
+#wrap
+  margin: 0px
+  padding: 0px
+
+#header
+  background-color: #fff
+  box-shadow: 0px 2px 2px 0px #d7d7d7
+  -webkit-box-shadow: 0px 2px 2px 0px #d7d7d7
+  -moz-box-shadow: 0px 2px 2px 0px #d7d7d7
+  margin-bottom: 30px
+
+.headerContainer
+  margin: 0px auto
+  width: 960px
+
+a.headerLogo
+  background-image: url("../images/logo.png")
+  background-repeat: no-repeat
+  width: 140px
+  height: 40px
+  display: block
+  text-indent: -9999px
+  margin: 10px 0px 10px 10px
+  float: left
+
+.headerRight
+  float: right
+  .headerTop
+    margin: 5px 0px 6px 0px
+    float: right
+    li
+      &.last
+        border-right: none
+      float: left
+      border-right: 1px solid #aaaaaa
+      line-height: 16px
+      padding: 0px 8px 0px 8px
+      a
+        font-size: 12px
+        font-family: Helvetica
+        color: #444444
+        &:hover
+          color: #dd4422
+      &.clr
+        clear: both
+        float: none
+        margin: 0px
+        padding: 0
+
+.headerBottom
+  float: right
+  li
+    float: right
+    margin-right: 25px
+  .language
+    background-image: url("../images/10x12-language-assets.png")
+    background-repeat: no-repeat
+    padding-left: 20px
+    background-position: 0px 7px
+    &:hover
+      color: #ff0000
+      background-image: url("../images/10x12-language-assets-hover.png")
+  .teams
+    background-image: url("../images/17x12-teams.png")
+    background-repeat: no-repeat
+    padding-left: 27px
+    background-position: 0px 7px
+    &:hover
+      color: #ff0000
+      background-image: url("../images/17x12-teams-hover.png")
+  .translator
+    background-image: url("../images/11x12-translator.png")
+    background-repeat: no-repeat
+    padding-left: 22px
+    background-position: 0px 6px
+    &:hover
+      color: #ff0000
+      background-image: url("../images/11x12-translator-hover.png")
+  .jobs
+    background-image: url("../images/12x10-jobs.png")
+    background-repeat: no-repeat
+    padding-left: 22px
+    background-position: 0px 7px
+    &:hover
+      color: #ff0000
+      background-image: url("../images/12x10-jobs-hover.png")
+  .dashboard
+    background-image: url("../images/12x10-dashboard.png")
+    background-repeat: no-repeat
+    padding-left: 22px
+    background-position: 0px 7px
+    &:hover
+      color: #ff0000
+      background-image: url("../images/12x10-dashboard-hover.png")
+  .headerBottomLast
+    margin-right: 10px
+  li a
+    font-size: 13px
+    line-height: 24px
+    font-family: roboto1
+    font-weight: bold
+    color: #444444
+    display: table-cell
+    vertical-align: middle
+    img
+      margin-right: 10px
+      border: none
+
+#content
+  margin: 0px auto
+  width: 960px
+  background-color: #fbfbfb
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3)
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3)
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3)
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  margin-bottom: 50px
+
+.contentLeft
+  width: 680px
+  float: left
+  background-color: #fff
+  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.3)
+  -webkit-box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.3)
+  -moz-box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.3)
+  border-bottom-left-radius: 5px
+  /*box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+
+.contentLeftTop
+  padding: 18px 20px 15px 20px
+  background-color: #444444
+  border-top-left-radius: 5px
+  margin-bottom: 26px
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3)
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3)
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3)
+
+.contentLeftTopLeft
+  float: left
+  margin: 0px 19px 0px 0px
+
+.profileImage
+  position: relative
+  margin-bottom: 8px
+  img
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    -moz-border-radius: 50%
+    -webkit-border-radius: 50%
+    border: 5px solid #2f2f2f
+  .facebook
+    position: absolute
+    background-image: url("../images/facebook.png")
+    background-repeat: no-repeat
+    width: 16px
+    height: 16px
+    display: block
+    top: 80px
+    left: 90px
+    border: 0px
+    opacity: 0.8
+    &:hover
+      opacity: 1
+  .linkedin
+    position: absolute
+    background-image: url("../images/linkedIn.png")
+    background-repeat: no-repeat
+    width: 16px
+    height: 16px
+    top: 95px
+    left: 70px
+    border: none
+    opacity: 0.8
+    &:hover
+      opacity: 1
+  .twitter
+    position: absolute
+    background-image: url("../images/twitter.png")
+    background-repeat: no-repeat
+    width: 16px
+    height: 16px
+    top: 60px
+    left: 100px
+    border: 0px
+    opacity: 0.8
+    &:hover
+      opacity: 1
+
+.contentLeft .contentLeftTopLeft .button
+  font-size: 12px
+  font-family: Helvetica
+  line-height: 20px
+  background-image: url("../images/member-type.png")
+  background-repeat: no-repeat
+  width: 115px
+  text-align: center
+  display: block
+  color: #000000
+  &:hover
+    color: #f2f2f2
+
+.contentLeftTopMiddle
+  float: left
+  font-family: Helvetica
+  h1
+    font-size: 24px
+    line-height: 18px
+    font-family: roboto1
+    color: #fff
+    margin: 0px 0px 11px 0px
+  .userFrom
+    font-size: 12px
+    line-height: 20px
+    color: #bbbbbb
+    display: block
+    margin-bottom: 5px
+  .userProfession
+    font-size: 14px
+    line-height: 20px
+    font-weight: bold
+    color: #fff
+    display: block
+    margin-bottom: 9px
+  ul
+    font-size: 12px
+    line-height: 18px
+    color: #bbbbbb
+    span
+      color: #fff
+
+.contentLeftTopRight
+  float: right
+  font-family: Helvetica
+  .userRating
+    margin: 0px 0px 7px 0px
+    float: right
+    height: 13px
+    position: relative
+    background-color: #444444
+    li
+      float: left
+      background: url("../images/ratingstar.png") top left no-repeat
+      width: 13px
+      height: 13px
+      margin-right: 3px
+      &.five
+        background: url("../images/ratingstr-hollow.png") top left no-repeat
+        margin-right: 0px
+  img
+    float: right
+    display: block
+    margin: 0px 5px 7px 0px
+
+/**** css for star rating *********
+
+/**********************************
+
+.recommendation
+  font-size: 13px
+  font-family: Helvetica
+  line-height: 16px
+  color: #bbbbbb
+  margin-bottom: 30px
+  span
+    color: #fff
+    font-size: 18px
+    line-height: 16px
+
+.contentLeftTopRight .upgradeBtn
+  display: block
+  width: 164px
+  border: 1px solid #0e0e0e
+  text-align: center
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkir-border-radius: 5px
+  box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.3)
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.3)
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.3)
+  float: right
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#525252), to(#222222))
+  background-image: -moz-linear-gradient(top, #525252, #222222)
+  font-size: 14px
+  line-height: 29px
+  font-family: Helvetica
+  color: #fff
+  margin-bottom: 14px
+  &:hover
+    box-shadow: 0px 0px 6px  2px #ea531b
+    -moz-box-shadow: 0px 0px 6px  2px #ea531b
+    -webkit-box-shadow: 0px 0px 6px  2px #ea531b
+    width: 163px
+
+.addpower
+  font-size: 12px
+  text-align: right
+  color: #bbbbbb
+  span
+    color: #fff
+
+.profileInfo
+  margin: 0px 35px 10px 35px
+  font-family: Helvetica
+  ul li
+    &.clr
+      clear: both
+      float: none
+      margin: 0px
+      padding: 0px
+    font-size: 14px
+    line-height: 16px
+    margin-bottom: 20px
+  .contactInfo
+    border-bottom: 1px solid #ebebeb
+    padding-bottom: 10px
+    margin-bottom: 35px
+    font-family: Helvetica
+    .address
+      background-image: url("../images/15x10-400.png")
+      background-repeat: no-repeat
+      padding-left: 25px
+      background-position: 3px
+    .contact
+      margin-bottom: 16px
+    li
+      .mobile
+        background-image: url("../images/15x17-call.png")
+        background-repeat: no-repeat
+        padding-left: 25px
+        width: 280px
+        float: left
+        background-position: 3px
+      .fax
+        background-image: url("../images/15X15-fax.png")
+        background-repeat: no-repeat
+        padding-left: 25px
+        float: left
+    .email
+      margin-bottom: 20px
+    li
+      .email
+        background-image: url("../images/15X10-message.png")
+        background-repeat: no-repeat
+        padding-left: 25px
+        width: 280px
+        float: left
+        background-position: 3px
+      .web
+        background-image: url("../images/18X20-link.png")
+        background-repeat: no-repeat
+        padding-left: 25px
+        float: left
+        color: #dd4422
+
+/* ************* job history *************
+
+.jobHistory
+  margin-bottom: 35px
+  .heading
+    font-size: 24px
+    display: block
+    line-height: 32px
+    font-family: roboto-med
+    background-image: url("../images/31X26-jobs.png")
+    background-repeat: no-repeat
+    color: #444444
+    border-bottom: 1px solid #ebebeb
+    padding-left: 37px
+    padding-bottom: 10px
+    margin-bottom: 12px
+  ul
+    font-family: Helvetica
+    li
+      border-bottom: 1px solid #ebebeb
+      margin-bottom: 10px
+  h3
+    font-size: 18px
+    line-height: 36px
+    color: #444444
+  .companyName
+    font-size: 14px
+    line-height: 22px
+    display: block
+    color: #444444
+  .duration
+    font-size: 11px
+    line-height: 16px
+    color: #aaaaaa
+    display: block
+    margin-bottom: 14px
+  p
+    font-size: 12px
+    line-height: 18px
+    color: #888888
+    text-align: justify
+
+/********** education section ************
+
+.education
+  margin: 0px 0px 8px 0px
+  font-family: Helvetica
+  .heading
+    font-size: 24px
+    display: block
+    line-height: 36px
+    font-family: roboto-med
+    background-image: url("../images/40X33-education.png")
+    background-repeat: no-repeat
+    padding-left: 45px
+    color: #444444
+    border-bottom: 1px solid #ebebeb
+    padding-bottom: 10px
+    margin-bottom: 20px
+  ul
+    li
+      float: left
+      display: block
+      width: 265px
+      box-shadow: 0px 0px 1px 1px #d9d9d9
+      -moz-box-shadow: 0px 0px 1px 1px #d9d9d9
+      -webkit-box-shadow: 0px 0px 1px 1px #d9d9d9
+      border-radius: 3px
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      padding: 15px 14px 15px 14px
+    .clr
+      clear: both
+      float: none
+      box-shadow: none
+      border: none
+      padding: 0px
+      margin: 0px
+    li
+      &.educationLast
+        margin-right: 0px
+        float: right
+      h3
+        font-size: 18px
+        line-height: 22px
+        color: #444444
+    .course
+      font-size: 14px
+      line-height: 22px
+      color: #444444
+      display: block
+    .duration
+      font-size: 11px
+      line-height: 16px
+      color: #aaaaaa
+
+/**************** Review section ******************
+
+.review
+  font-family: Helvetica
+  margin-bottom: 10px
+  .reviewTop
+    border-bottom: 1px solid #ebebeb
+    padding-bottom: 10px
+    margin-bottom: 20px
+  .head
+    font-size: 24px
+    line-height: 36px
+    font-family: roboto-med
+    color: #444444
+    float: left
+    display: block
+  .reviewnav
+    float: right
+    margin-top: 20px
+  .reviewBottom .clr
+    clear: both
+    float: none
+    padding: 0px
+    margin: 0px
+    box-shadow: none
+    height: 0px
+    width: 0px
+  .reviewnav
+    li
+      float: left
+      margin-right: 10px
+    .prev
+      background-image: url("../images/prev.png")
+      background-repeat: no-repeat
+      width: 11px
+      height: 16px
+      display: block
+      float: left
+      padding-right: 10px
+    .next
+      background-image: url("../images/next.png")
+      background-repeat: no-repeat
+      width: 11px
+      height: 16px
+      display: block
+      float: left
+  .reviewBottom li
+    width: 278px
+    float: left
+    border-radius: 5px
+    -moz-border-radius: 5px
+    -webkit-border-radius: 5px
+    height: 130px
+    margin-right: 20px
+    box-shadow: 0px 0px 0px 1px #d9d9d9
+    -moz-box-shadow: 0px 0px 0px 1px #d9d9d9
+    -webkit-box-shadow: 0px 0px 0px 1px #d9d9d9
+    padding: 10px 5px 10px 10px
+    &.reviewLast
+      margin-right: 0px
+      float: right
+
+.reviewProfileTop
+  border-bottom: 1px solid #f2f2f2
+  margin-bottom: 5px
+  a
+    display: block
+    float: left
+    margin-right: 10px
+  img
+    border-radius: 30px
+    -moz-border-radius: 30px
+    -webkit-border-radius: 30px
+    width: 60px
+    height: 60px
+    border: none
+    margin-bottom: 5px
+  .reviewProfileName
+    float: left
+    padding-top: 10px
+
+.reviewProfileName
+  a
+    font-size: 16px
+    line-height: 18px
+    color: #222222
+    display: block
+    &:hover
+      color: #dd4422
+  span
+    font-size: 12px
+    line-height: 18px
+    color: #666666
+    display: block
+
+.review .reviewProfileBottom
+  span
+    font-size: 14px
+    line-height: 18px
+    color: #444444
+  p
+    font-size: 12px
+    line-height: 16px
+    color: #888888
+    margin: 0px
+    a
+      color: #dd4422
+
+.reviewProfileTop .reviewProfileRating
+  float: right
+  margin-top: 12px
+  li
+    width: 13px
+    height: 13px
+    background-image: url("../images/ratingstar.png")
+    background-repeat: no-repeat
+    float: left
+    margin: 0px
+    padding: 0px
+    box-shadow: none
+  .five
+    background-image: url("../images/ratingstr-hollow.png")
+    background-repeat: no-repeat
+
+/************** footer ***************
+
+#footer
+  background-color: #353535
+  font-family: Helvetica
+  .footerWrapper
+    width: 960px
+    margin: 0px auto
+    text-align: center
+    padding-bottom: 80px
+    ul
+      padding-top: 15px
+      text-align: center
+      li
+        display: inline
+    .footerLast
+      border: none
+    ul
+      .clr
+        float: none
+        border: none
+        clear: both
+      li
+        a
+          font-family: Helvetica
+          font-size: 12px
+          line-height: 16px
+          color: #d9d9d9
+          padding: 0px 5px 0px 5px
+          border-right: 1px solid #d9d9d9
+          &:hover
+            color: #dd4422
+        &.clr
+          clear: both
+          padding: 0px
+          margin: 0px
+          float: none
+    span
+      color: #888888
+      font-size: 12px
+      line-height: 16px
+
+/*********** end of footer ************
+
+/************************* rightcontent *******************
+
+.contentRight
+  float: left
+  width: 280px
+  border-top-right-radius: 5px
+  .contentRightTop
+    margin: 25px 30px 20px 20px
+    font-family: roboto1
+    vertical-align: middle
+    .messages
+      background-image: url("../images/msg.png")
+      background-repeat: no-repeat
+      font-size: 18px
+      line-height: 36px
+      float: left
+      color: #dd4422
+      padding-left: 40px
+    .msgCount
+      float: right
+      font-family: roboto-regular
+      .msgNew
+        float: right
+        font-size: 12px
+        line-height: 12px
+        color: #666666
+        margin: 12px 6px 0px 0px
+      .msgNo
+        height: 18px
+        width: 22px
+        color: #fff
+        font-size: 12px
+        float: right
+        padding-top: 3px
+        border-radius: 50%
+        text-align: center
+        background-color: #dd4422
+        margin-top: 8px
+
+.dayMessage
+  font-family: Helvetica
+  margin-bottom: 20px
+  ul
+    margin: 0px 30px 10px 20px
+    li
+      display: block
+      border-bottom: 1px solid #ebebeb
+      margin: 5px 0px 10px 0px
+      a
+        display: block
+        float: left
+        margin-bottom: 5px
+        span
+          margin-top: 8px
+          display: block
+          float: left
+          font-size: 16px
+          line-height: 18px
+          color: #222222
+          &:hover
+            color: #dd4422
+      img
+        width: 35px
+        height: 35px
+        float: left
+        display: block
+        border-radius: 17px
+        margin-right: 10px
+        border: none
+      p
+        font-size: 12px
+        line-height: 16px
+        color: #666666
+        margin: 0px
+        padding: 0px
+      span
+        font-size: 11px
+        color: #aaaaaa
+        margin: 5px 0px 10px 0px
+        display: block
+
+.date
+  margin-left: 20px
+  border-radius: 3px
+  color: #666666
+  float: left
+  display: block
+  font-size: 11px
+  padding: 0px 5px 0px 5px
+  background-color: #e5e5e5
